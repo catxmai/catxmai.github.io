@@ -1,78 +1,175 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<!--
-Design by TEMPLATED
-http://templated.co
-Released for free under the Creative Commons Attribution License
+<!doctype html>
+<html>
+  <head>
+      <meta charset="utf-8">
+      <meta name="description" content="">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <title>Cat Mai</title>
+      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+      <link href="https://fontawesome.com/css/fontawesome.css" rel="stylesheet">
+      <link href="https://fontawesome.com/css/brands.css" rel="stylesheet">
+      <link href="https://fontawesome.com/css/solid.css" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:300,400,600,700,800,900" rel="stylesheet">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/railscasts.min.css">
+      <link rel="stylesheet" href="scribbler-global.css">
+      <link rel="stylesheet" href="scribbler-landing.css">
 
-Name       : Doubtless 
-Description: A two-column, fixed-width design with dark color scheme.
-Version    : 1.0
-Released   : 20130428
+  </head>
 
--->
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title></title>
-<meta name="keywords" content="" />
-<meta name="description" content="" />
-<link href="http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700|Archivo+Narrow:400,700" rel="stylesheet" type="text/css">
-<link href="default.css" rel="stylesheet" type="text/css" media="all" />
-<!--[if IE 6]>
-<link href="default_ie6.css" rel="stylesheet" type="text/css" />
-<![endif]-->
-</head>
-<body>
-<div id="logo" class="container">
-	<h1><a href="#">Doubtless</a></h1>
-</div>
-<div id="menu-wrapper">
-	<div id="menu" class="container">
-		<ul>
-			<li class="current_page_item"><a href="#">Homepage</a></li>
-			<li><a href="#">Services</a></li>
-			<li><a href="#">Blog</a></li>
-			<li><a href="#">Photos</a></li>
-			<li><a href="#">About Us</a></li>
-			<li><a href="#">Links</a></li>
-			<li><a href="#">Contact Us</a></li>
-		</ul>
-	</div>
-</div>
-<div id="page" class="container">
-	<div id="box1">
-		<h2 class="title"><a href="#">Welcome to Doubtless</a></h2>
-		<div style="clear: both;">&nbsp;</div>
-		<div class="entry">
-			<p>This is <strong>Doubtless </strong>, a free, fully standards-compliant CSS template designed by <a href="http://templated.co" rel="nofollow">TEMPLATED</a>.         This free template is released under the <a href="http://templated.co/license">Creative Commons Attribution</a> license, so you're pretty much free to do whatever you want with it (even use it commercially) provided you give us credit for it. Have fun :) </p>
-			<p>Sed lacus. Donec lectus. Nullam pretium nibh ut turpis. Nam bibendum. In nulla tortor, elementum ipsum. Proin imperdiet est. Phasellus dapibus semper urna. Pellentesque ornare, orci in felis. Donec ut ante. In id eros. Suspendisse lacus, cursus egestas at sem.</p>
-		</div>
-	</div>
-	<div id="box2">
-		<h2>Pellentesque ornare</h2>
-		<ul class="style1">
-			<li class="first"><a href="#">Aliquam libero</a></li>
-			<li><a href="#">Consectetuer adipiscing elit</a></li>
-			<li><a href="#">Metus aliquam pellentesque</a></li>
-			<li><a href="#">Suspendisse iaculis mauris</a></li>
-			<li><a href="#">Urnanet non molestie semper</a></li>
-			<li><a href="#">Proin gravida orci porttitor</a></li>
-		</ul>
-	</div>
-	<div id="box3">
-		<h2>Phasellus dapibus</h2>
-		<ul class="style1">
-			<li class="first"><a href="#">Aliquam libero</a></li>
-			<li><a href="#">Consectetuer adipiscing elit</a></li>
-			<li><a href="#">Metus aliquam pellentesque</a></li>
-			<li><a href="#">Suspendisse iaculis mauris</a></li>
-			<li><a href="#">Urnanet non molestie semper</a></li>
-			<li><a href="#">Proin gravida orci porttitor</a></li>
-		</ul>
-	</div>
-</div>
-<div id="footer" class="container">
-	<p>&copy; Untitled. All rights reserved. Design by <a href="http://templated.co" rel="nofollow">TEMPLATED</a>. </p>
-</div>
-</body>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+
+    body {
+      margin-left: 12%;
+      margin-right: 2%;
+      font-family: 'Open Sans', sans-serif;
+      font-weight: 300;
+    }
+    .fa,.fab:hover {
+      color: #797575;
+    }
+
+    .fa,.fab{
+      color: black;
+      font-size: large;
+    }
+
+    .social_buttons{
+      color: black;
+      letter-spacing: 10px;
+    }
+
+    .sidenav {
+      height: 100%;
+      width: 160px;
+      position: fixed;
+      z-index: 1;
+      top: 0;
+      left: 0;
+      background-color: #161515;
+      overflow-x: hidden;
+      padding-top: 20px;
+    }
+
+    .sidenav a {
+      padding: 6px 8px 6px 16px;
+      text-decoration: none;
+      font-size:16px;
+      color: #a5a5a5;
+      display: block;
+    }
+
+    .sidenav a:hover {
+      color: #f1f1f1;
+    }
+
+    .center {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      width: 90%;
+    }
+  </style>
+  </head>
+  <body>
+
+  <div class="sidenav">
+    <img src="img/ava.jpg" class="center"> <br>
+    <h1 class="center hero__title"
+        style="font-size: 28px;
+        font-family: 'Open Sans', sans-serif;;
+        color: whitesmoke;
+        margin-left: 15px">
+              cat mai</h1>
+    <a href="index.html">Bio</a>
+    <a href="projects.html">Projects</a>
+    <a href="personal.html">Personal</a>
+  </div>
+  <body>
+    <nav>
+      <div class="logo"></div>
+      <ul class="menu">
+        <div class="menu__item toggle"><span></span></div>
+<!--        <li class="menu__item"><a href="doc.html" class="link link&#45;&#45;dark"><i class="fa fa-book"></i> Documentation</a></li>-->
+      </ul>
+    </nav>
+    <div class="hero">
+    </div>
+    <div class="hero__terminal">
+      <pre>
+        <code class="shell-session demo">cmai> tl;dr </code>
+      </pre>
+    </div>
+
+    <div class="contact_info">
+      <p>
+        <div class="social_buttons">
+          <a href="https://www.linkedin.com/in/catmai/" target="_blank" rel="noopener noreferrer"
+             style="display: inline-block" class="fab fa-linkedin"></a>
+          <a href="https://github.com/catxmai"  target="_blank" rel="noopener noreferrer"
+             style="display: inline-block"class="fab fa-github"></a>
+          <a href="https://stackoverflow.com/users/13030069/cat-mai" target="_blank" rel="noopener noreferrer"
+             style="display: inline-block" class="fab fa-stack-overflow"></a><br>
+        </div>
+        <div style="font-size: 16px;line-height: 26px">
+          <a href="pdfs/CatResume_Mar2021_latex.pdf"; style="text-decoration:underline;color: black" target="_blank" rel="noopener noreferrer">Resume</a><br>
+          CMai[at]clarku.edu
+        </div>
+
+      </p>
+    </div>
+
+    <div class="hero__title">
+      Hi!
+    </div>
+    <br><br>
+    <div class="hero__description">
+      I am an undergraduate studying Mathematics and Computer science at Clark University. I'm applying
+      for PhD programs for Fall 2023 entry.
+
+      <br><br>
+      At Clark, my main research has been Human-Computer Interaction with a focus in <b>Social media analysis and social media sensemaking, specifically video sharing</b> with Dr. Shuo Niu.
+      We look at social media campaigns such as #TeamTrees, #StayHome #WithMe and use crowdsourcing data to investigate participation patterns that emerge across these social media campaigns.
+      These patterns help us understand how video-sharing platforms could support event collaboration.
+
+      <br><br>
+      At <a href="https://www.ngsx.org" style="text-decoration: underline">NGSX Learning Lab @ Clark</a>, I had been working with Dr. Sarah Michaels on improving professional development for K-12 educators who are working with
+      ESL learners in their Biology classes. My lead role was to lead the <b>classroom discourse analysis</b> and productive talk moves research.
+      This summer 2021, I will be working with Dr. Bruce McLaren and his lab on intelligent tutoring system, specifically in
+      education games.
+
+    </div>
+    <div class="hero__title">
+      Papers & Posters
+    </div>
+    <br><br>
+    <div class="hero__description">
+      <a href="https://arxiv.org/pdf/2101.03706.pdf"  target="_blank" rel="noopener noreferrer"
+         style="color: #232323"
+         class="fa fa-file">  </a>
+      <b>#StayHome #WithMe: How Do YouTubers Help With COVID-19 Loneliness?</b><br>
+      <i>Shuo Niu, Ava Bartolome*, Cat Mai*, and Nguyen B. Ha*</i><br>
+      (To appear) CHI '21
+      <br><br>
+      <b>How YouTubers Participate in a Social Media Campaign: A Culture-Based Analysis of #TeamTrees</b><br>
+      <i>Shuo Niu*, Cat Mai*, Anonymous Authors</i><br>
+      In prep
+      <br><br>
+      <a href="pdfs/TheOddOneOut.pdf"  target="_blank" rel="noopener noreferrer"
+         style="color: #232323"
+         class="fa fa-file">  </a>
+      <b>“Odd One Out”: Model Based Biology in an ESL Classroom</b><br>
+      <i>Mai, C*, Chiem, T*, Hassan, A*</i><br>
+      Clark Academic Fall Fest 2019
+
+      <br><br>
+      <small>(* indicates equal contribution)</small>
+
+    </div>
+
+    <footer class="footer">©2021 by cat mai</footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+    <script src="scribbler.js"></script>
+  </body>
 </html>
