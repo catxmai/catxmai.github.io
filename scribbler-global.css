@@ -25,6 +25,21 @@ html, body {
   background-color: white;
 }
 
+.navbar-nav a:hover{
+  background-color: var(--dark-gray-color);
+  color: black;
+}
+
+.navbar-nav a.active{
+  background-color: var(--dark-gray-color);
+  color: white;
+}
+
+.navbar-brand {
+  font-size: larger;
+  font-weight: 600;
+}
+
 p {
   font-weight: 300;
   color: #4A4A4A;

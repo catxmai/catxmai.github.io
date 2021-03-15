@@ -5,6 +5,7 @@
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Cat Mai</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:300,400,600,700,800,900" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/railscasts.min.css">
@@ -17,32 +18,10 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
 
-    .fa:hover {
-        opacity: 0.7;
-    }
-
-    .sidenav {
-        height: 100%;
-        width: 160px;
-        position: fixed;
-        z-index: 1;
-        top: 0;
-        left: 0;
-        background-color: #161515;
-        overflow-x: hidden;
-        padding-top: 20px;
-    }
-
-    .sidenav a {
-        padding: 6px 8px 6px 16px;
-        text-decoration: none;
-        font-size:16px;
-        color: #a5a5a5;
-        display: block;
-    }
-
-    .sidenav a:hover {
-        color: #f1f1f1;
+    body{
+        margin-top: 7%;
+        margin-left: 10%;
+        margin-right: 10%;
     }
 
     .project_section {
@@ -50,25 +29,19 @@
         margin-left: -28px;
     }
 
-    .center {
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-        width: 90%;
-    }
-
     li img {
         float: left;
         margin: 0 15px 0 0;
         display: table-cell;
         vertical-align: middle;
-        width: 25%;
+        width: 35%;
         padding-right: 1em;
     }
 
+
     li p {
         font-family: 'Open Sans',sans-serif;
-        font-size: .75vmax;
+        font-size: .9vmax;
         font-weight: 400;
         text-align: justify;
         display: table-cell;
@@ -87,10 +60,14 @@
     li h3 {
         margin-top: -7px;
         font-family: "Poppins",sans-serif;
+        font-weight: 600;
+        font-size: large;
     }
 
     h1.project_section{
         font-size: xx-large;
+        font-family: "Poppins",sans-serif;
+        font-weight: 600;
     }
 
     .underline--magical {
@@ -105,18 +82,22 @@
 </head>
 <body>
 
-<div class="sidenav">
-    <img src="img/ava.jpg" class="center"> <br>
-    <h1 class="center hero__title"
-        style="font-size: 28px;
-        font-family: 'Open Sans', sans-serif;;
-        color: whitesmoke;
-        margin-left: 15px">
-        cat mai</h1>
-    <a href="index.html">Bio</a>
-    <a href="projects.html">Projects</a>
-    <a href="personal.html">Personal</a>
-</div>
+<nav class="navbar navbar-expand-md navbar-dark bg-dark mb-3">
+    <div class="container-fluid">
+        <a href="index.html" class="navbar-brand mr-3">Cat Mai</a>
+        <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <div class="navbar-nav">
+                <a href="index.html" class="nav-item nav-link">Bio</a>
+                <a href="projects.html" class="nav-item nav-link active">Projects</a>
+                <a href="personal.html" class="nav-item nav-link">Personal</a>
+            </div>
+        </div>
+    </div>
+</nav>
+
 <body>
 <nav>
     <div class="logo"></div>
@@ -126,20 +107,18 @@
     </ul>
 </nav>
 
-<!--<div class="hero__title project_section">-->
-<!--    Projects-->
-<!--</div> <br><br>-->
-
 <!--PROJECT-->
 <div>
     <section>
         <!-- SOCIAL COMPUTING-->
         <h1 class="project_section">
+            <br>
             <span class="underline--magical">Social Computing</span>
+            <br>
         </h1>
         <ul>
             <li>
-                <img src="img/stayhome.jpg" >
+                <img src="img/stayhome.jpg">
                 <h3>#StayHome #WithMe - A Call for Videos During COVID-19</h3>
                 <p>Lorem ipsum dolor sit amet, consecteturadipiscing elit. Praesent euismod ultrices ante,
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent euismod ultrices ante, ac laoreet nulla vestibulum adipiscing. Nam quis justo in augue auctor imperdiet.

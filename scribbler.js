@@ -25,9 +25,9 @@ if (document.getElementsByClassName('demo').length > 0) {
                 ## Research: HCI, Learning Sciences
                 - HCI: social media-collective action, mental health
                 - Learning Sciences: discourse analysis, intelligent tutoring system
-              \n 
+              
                 ## Free time: play Go, indoor garden, puzzles, play Go, code`;
-  var speed = 4;
+  var speed = 0;
 
   function typeItOut () {
     if (i < txt.length) {
@@ -37,7 +37,7 @@ if (document.getElementsByClassName('demo').length > 0) {
     }
   }
 
-  setTimeout(typeItOut, 400);
+  setTimeout(typeItOut, 0);
 }
 
 // toggle tabs on codeblock

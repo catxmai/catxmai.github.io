@@ -5,6 +5,7 @@
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Cat Mai</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:300,400,600,700,800,900" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/railscasts.min.css">
@@ -17,28 +18,9 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
 
-    .sidenav {
-        height: 100%;
-        width: 160px;
-        position: fixed;
-        z-index: 1;
-        top: 0;
-        left: 0;
-        background-color: #161515;
-        overflow-x: hidden;
-        padding-top: 20px;
-    }
-
-    .sidenav a {
-        padding: 6px 8px 6px 16px;
-        text-decoration: none;
-        font-size:16px;
-        color: #a5a5a5;
-        display: block;
-    }
-
-    .sidenav a:hover {
-        color: #f1f1f1;
+    active{
+        background-color: #4CAF50;
+        color: white;
     }
 
     .personal_section {
@@ -46,25 +28,18 @@
         margin-left: -28px;
     }
 
-    .center {
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-        width: 90%;
-    }
-
     li img {
         float: left;
         margin: 0 15px 0 0;
         display: table-cell;
         vertical-align: middle;
-        width: 40%;
+        width: 35%;
         padding-right: 1em;
     }
 
     li p {
         font-family: 'Open Sans',sans-serif;
-        font-size: 12px;
+        font-size: .9vmax;
         font-weight: 400;
         text-align: justify;
         display: table-cell;
@@ -83,14 +58,24 @@
     li h3 {
         margin-top: -7px;
         font-family: "Poppins",sans-serif;
+        font-weight: 600;
+        font-size: large;
     }
 
     h1.personal_section{
         font-size: xx-large;
+        font-family: "Poppins",sans-serif;
+        font-weight: 600;
+    }
+
+    body{
+        margin-top: 7%;
+        margin-left: 10%;
+        margin-right: 10%;
     }
 
     .underline--magical {
-        background-image: linear-gradient(150deg, #681fd4 0%, #ffffff 100%);
+        background-image: linear-gradient(150deg, #0989cd 0%, #ffffff 100%);
         background-repeat: no-repeat;
         background-size: 100% 0.2em;
         background-position: 0 88%;
@@ -101,18 +86,32 @@
 </head>
 <body>
 
-<div class="sidenav">
-    <img src="img/ava.jpg" class="center"> <br>
-    <h1 class="center hero__title"
-        style="font-size: 28px;
-        font-family: 'Open Sans', sans-serif;;
-        color: whitesmoke;
-        margin-left: 15px">
-        cat mai</h1>
-    <a href="index.html">Bio</a>
-    <a href="projects.html">Projects</a>
-    <a href="personal.html">Personal</a>
-</div>
+<nav class="navbar navbar-expand-md navbar-dark bg-dark mb-3">
+    <div class="container-fluid">
+        <a href="#" class="navbar-brand">Cat Mai</a>
+        <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <div class="navbar-nav">
+                <a href="index.html" class="nav-item nav-link">Bio</a>
+                <a href="projects.html" class="nav-item nav-link">Projects</a>
+                <a href="personal.html" class="nav-item nav-link active">Personal</a>
+            </div>
+        </div>
+<!--        <form class="navbar-form navbar-left" action="/action_page.php">-->
+<!--            <div class="input-group">-->
+<!--                <input type="text" class="form-control" placeholder="Search">-->
+<!--                <div class="input-group-btn">-->
+<!--                    <button class="btn btn-default" type="submit">-->
+<!--                        <i class="glyphicon glyphicon-search"></i>-->
+<!--                    </button>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--        </form>-->
+    </div>
+</nav>
+
 <body>
 <nav>
     <div class="logo"></div>
@@ -122,17 +121,18 @@
     </ul>
 </nav>
 
-<div class="hero__title personal_section">
-    Personal
-</div> <br><br>
-
 <!--PROJECT-->
 <div>
     <section>
         <!-- GO/WEIQI-->
+        <h1 class="personal_section">
+            <br>
+            <span class="underline--magical">Personal</span>
+            <br>
+        </h1>
         <ul>
             <li>
-                <img src="img/seattle_succulent.jpg" >
+                <img src="img/bomarzo.PNG" >
                 <h3>Go/Weiqi</h3>
                 <p>Go is a strategy board game and rose to mainstream population around 2016 - when DeepMind's AlphaGo beat Lee Sedol. Go is my biggest hobby and can always make me giddy to talk about! I play Go competitively at regional, sometimes national tournaments. My player card. I managed to win the US Open 6k division
                     in 2018! I since have improved a lot and the playing field is much more difficult now.
