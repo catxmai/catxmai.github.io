@@ -20,8 +20,9 @@ var getAll = function (selector, scope) {
 // setup typewriter effect in the terminal demo
 if (document.getElementsByClassName('demo').length > 0) {
   var i = 0;
-  var txt = `\n
-                I'm a Math + CS junior at Clark U. \n
+  var txt = `
+                I'm a Math + CS junior at Clark U. 
+                
                 ## Research: HCI, Learning Sciences
                 - HCI: social media-collective action, mental health
                 - Learning Sciences: discourse analysis, intelligent tutoring system

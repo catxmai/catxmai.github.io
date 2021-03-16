@@ -9,7 +9,7 @@
   --white-color: #FAFBFC;
   --light-gray-color: #C6CBD1;
   --medium-gray-color: #959DA5;
-  --dark-gray-color: #444D56;
+  --dark-gray-color: #b5c4d6;
   --bg-color: #F8F8FA;
   --code-bg-color: #F0E8E8;
 }
@@ -27,6 +27,10 @@ html, body {
 
 .navbar-nav a:hover{
   background-color: var(--dark-gray-color);
+}
+
+.navbar {
+  background-color: #ffffff;
   color: black;
 }
 
@@ -34,6 +38,7 @@ html, body {
   background-color: var(--dark-gray-color);
   color: white;
 }
+
 
 .navbar-brand {
   font-size: larger;

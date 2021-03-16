@@ -41,12 +41,27 @@
       letter-spacing: 10px;
     }
 
+    img {
+      display: table-cell;
+      float: left;
+      width: 25%;
+      margin-right: 2vmax
+
+    }
+
+    li {
+      overflow: auto;
+      list-style-type: none;
+      margin-left: -3vmax;
+    }
+
+
   </style>
   </head>
   <body>
-  <nav class="navbar navbar-expand-md navbar-dark bg-dark mb-3">
+  <nav class="navbar navbar-expand-md mb-3">
     <div class="container-fluid">
-      <a href="#" class="navbar-brand mr-3">Cat Mai</a>
+      <a href="index.html" class="navbar-brand mr-3">Cat Mai</a>
       <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -61,13 +76,6 @@
   </nav>
 
   <body>
-    <nav>
-      <div class="logo"></div>
-      <ul class="menu">
-        <div class="menu__item toggle"><span></span></div>
-<!--        <li class="menu__item"><a href="doc.html" class="link link&#45;&#45;dark"><i class="fa fa-book"></i> Documentation</a></li>-->
-      </ul>
-    </nav>
     <div class="hero">
     </div>
     <div class="hero__terminal">
@@ -76,32 +84,35 @@
       </pre>
     </div>
 
-    <div class="contact_info">
-      <p>
-        <div class="social_buttons">
-          <a href="https://www.linkedin.com/in/catmai/" target="_blank" rel="noopener noreferrer"
-             style="display: inline-block" class="fab fa-linkedin"></a>
-          <a href="https://github.com/catxmai"  target="_blank" rel="noopener noreferrer"
-             style="display: inline-block"class="fab fa-github"></a>
-          <a href="https://stackoverflow.com/users/13030069/cat-mai" target="_blank" rel="noopener noreferrer"
-             style="display: inline-block" class="fab fa-stack-overflow"></a><br>
-        </div>
-        <div style="font-size: 1.1vmax;line-height: 1.7vmax">
-          <a href="pdfs/CatResume_Mar2021_latex.pdf"; style="text-decoration:underline;color: black" target="_blank" rel="noopener noreferrer">Resume</a><br>
-          CMai[at]clarku.edu
-        </div>
 
-      </p>
-    </div>
+    <ul>
+      <li>
+        <img src="img/ava.jpg" >
+        <div class="contact_info">
+          <p>
+          <div class="social_buttons">
+            <a href="https://www.linkedin.com/in/catmai/" target="_blank" rel="noopener noreferrer"
+               style="display: inline-block" class="fab fa-linkedin"></a>
+            <a href="https://github.com/catxmai"  target="_blank" rel="noopener noreferrer"
+               style="display: inline-block"class="fab fa-github"></a>
+            <a href="https://stackoverflow.com/users/13030069/cat-mai" target="_blank" rel="noopener noreferrer"
+               style="display: inline-block" class="fab fa-stack-overflow"></a><br>
+          </div>
+          <div style="font-size: 1.1vmax;line-height: 1.7vmax">
+            <a href="pdfs/CatResume_Mar2021_latex.pdf"; style="text-decoration:underline;color: black" target="_blank" rel="noopener noreferrer">Resume</a><br>
+            CMai[at]clarku.edu
+          </div>
+          </p>
+        </div>
+        <div class="hero__title">Hi I'm Cat!</div>
+        <div class="hero__description" style="display: table-cell;">
+          I am an undergraduate studying Mathematics and Computer science at Clark University. I'm applying
+          for PhD programs for Fall 2023 entry.
+        </div>
+      </li>
+    </ul>
 
-    <div class="hero__title">
-      Hi!
-    </div>
-    <br><br>
     <div class="hero__description">
-      I am an undergraduate studying Mathematics and Computer science at Clark University. I'm applying
-      for PhD programs for Fall 2023 entry.
-
       <br><br>
       At Clark, my main research has been Human-Computer Interaction with a focus in <b>Social media analysis and social media sensemaking, specifically video sharing</b> with Dr. Shuo Niu.
       We look at social media campaigns such as #TeamTrees, #StayHome #WithMe and use crowdsourcing data to investigate participation patterns that emerge across these social media campaigns.
@@ -112,12 +123,12 @@
       ESL learners in their Biology classes. My lead role was to lead the <b>classroom discourse analysis</b> and productive talk moves research.
       This summer 2021, I will be working with Dr. Bruce McLaren and his lab on intelligent tutoring system, specifically in
       education games.
-
     </div>
+
     <div class="hero__title">
       Papers & Posters
     </div>
-    <br><br>
+    <br>
     <div class="hero__description">
       <a href="https://arxiv.org/pdf/2101.03706.pdf"  target="_blank" rel="noopener noreferrer"
          style="color: #232323"
