@@ -28,7 +28,10 @@ html, body {
   font-family: 'Open Sans', sans-serif;
   background-color: white;
 }
-
+.nav-bar-me {
+  justify-content: center;
+  display: flex;
+}
 .nav-bar-me li {
   display: inline;
   list-style-type: none;
