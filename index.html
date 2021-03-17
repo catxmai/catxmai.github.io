@@ -5,12 +5,13 @@
       <meta name="description" content="">
       <meta name="viewport" content="width=device-width, initial-scale=1">
       <title>Cat Mai</title>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
       <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
       <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
       <link href="https://fontawesome.com/css/fontawesome.css" rel="stylesheet">
       <link href="https://fontawesome.com/css/brands.css" rel="stylesheet">
       <link href="https://fontawesome.com/css/solid.css" rel="stylesheet">
-      <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:300,400,600,700,800,900" rel="stylesheet">
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/railscasts.min.css">
       <link rel="stylesheet" href="scribbler-global.css">
       <link rel="stylesheet" href="scribbler-landing.css">
@@ -44,12 +45,12 @@
     img {
       display: table-cell;
       float: left;
-      width: 25%;
+      width: 27%;
       margin-right: 2vmax
 
     }
 
-    li {
+    .social li {
       overflow: auto;
       list-style-type: none;
       margin-left: -3vmax;
@@ -59,33 +60,25 @@
   </style>
   </head>
   <body>
-  <nav class="navbar navbar-expand-md mb-3">
-    <div class="container-fluid">
-      <a href="index.html" class="navbar-brand mr-3">Cat Mai</a>
-      <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarCollapse">
-        <div class="navbar-nav">
-          <a href="index.html" class="nav-item nav-link active">Bio</a>
-          <a href="projects.html" class="nav-item nav-link">Projects</a>
-          <a href="personal.html" class="nav-item nav-link">Personal</a>
-        </div>
-      </div>
-    </div>
-  </nav>
-
-  <body>
-    <div class="hero">
-    </div>
-    <div class="hero__terminal">
-      <pre>
-        <code class="shell-session demo">cmai> tl;dr </code>
-      </pre>
-    </div>
+  <div class="nav-bar-me">
+      <ul>
+        <li class="my-name"><a href="index.html">cat mai</a></li>
+        <li><a href="index.html" class="nav-me-link me-active">Bio</a></li>
+        <li><a href="projects.html" class="nav-me-link">Projects</a></li>
+        <li><a href="personal.html" class="nav-me-link">Personal</a></li>
+      </ul>
+  </div>
+  <br><br><br>
+  <div class="hero">
+  </div>
+  <div class="hero__terminal">
+    <pre>
+      <code class="shell-session demo">cmai> tl;dr </code>
+    </pre>
+  </div>
 
 
-    <ul>
+    <ul class="social">
       <li>
         <img src="img/ava.jpg" >
         <div class="contact_info">
@@ -107,14 +100,14 @@
         <div class="hero__title">Hi I'm Cat!</div>
         <div class="hero__description" style="display: table-cell;">
           I am an undergraduate studying Mathematics and Computer science at Clark University. I'm applying
-          for PhD programs for Fall 2023 entry.
+          for PhD programs in Human-Computer Interaction for Fall 2023 entry.
         </div>
       </li>
     </ul>
 
     <div class="hero__description">
       <br><br>
-      At Clark, my main research has been Human-Computer Interaction with a focus in <b>Social media analysis and social media sensemaking, specifically video sharing</b> with Dr. Shuo Niu.
+      At Clark, my main research has been Human-Computer Interaction with a focus in <b>Social media analysis</b> and <b>social media sensemaking, specifically video sharing</b> with Dr. Shuo Niu.
       We look at social media campaigns such as #TeamTrees, #StayHome #WithMe and use crowdsourcing data to investigate participation patterns that emerge across these social media campaigns.
       These patterns help us understand how video-sharing platforms could support event collaboration.
 

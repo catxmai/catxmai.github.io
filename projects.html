@@ -29,7 +29,7 @@
         margin-left: -28px;
     }
 
-    li img {
+    .project-description li img {
         float: left;
         margin: 0 15px 0 0;
         display: table-cell;
@@ -39,7 +39,7 @@
     }
 
 
-    li p {
+    .project-description li p {
         font-family: 'Open Sans',sans-serif;
         font-size: .9vmax;
         font-weight: 400;
@@ -47,7 +47,7 @@
         display: table-cell;
     }
 
-    li {
+    .project-description li {
         padding: 10px;
         overflow: auto;
         margin-left: -80px;
@@ -80,26 +80,19 @@
 
 </style>
 </head>
-<body>
 
-<nav class="navbar navbar-expand-md mb-3">
-    <div class="container-fluid">
-        <a href="index.html" class="navbar-brand mr-3">Cat Mai</a>
-        <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarCollapse">
-            <div class="navbar-nav">
-                <a href="index.html" class="nav-item nav-link">Bio</a>
-                <a href="projects.html" class="nav-item nav-link active">Projects</a>
-                <a href="personal.html" class="nav-item nav-link">Personal</a>
-            </div>
-        </div>
-    </div>
-</nav>
+<div class="nav-bar-me">
+    <ul>
+        <li class="my-name"><a href="index.html">cat mai</a></li>
+        <li><a href="index.html" class="nav-me-link">Bio</a></li>
+        <li><a href="projects.html" class="nav-me-link me-active">Projects</a></li>
+        <li><a href="personal.html" class="nav-me-link">Personal</a></li>
+    </ul>
+</div>
+<br><br><br>
 
 <!--PROJECT-->
-<div>
+<div class="project-description">
     <section>
         <!-- SOCIAL COMPUTING-->
         <h1 class="project_section">
@@ -132,7 +125,7 @@
         </h1>
         <ul>
             <li>
-                <img src="img/ngss.PNG" >
+                <img src="img/mber.PNG" >
                 <h3>Biology in an ESL Classroom</h3>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent euismod ultrices ante, ac laoreet nulla vestibulum adipiscing. Nam quis justo in augue auctor imperdiet.</p>
             </li>

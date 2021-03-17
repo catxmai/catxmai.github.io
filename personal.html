@@ -5,7 +5,6 @@
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Cat Mai</title>
-    <script src="https://code.jquery.com/jquery-2.1.3.js"></script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:300,400,600,700,800,900" rel="stylesheet">
@@ -28,11 +27,11 @@
         margin-left: -28px;
     }
 
-    li a {
+    .personal-description li a {
         text-decoration: underline;
     }
 
-    li img {
+    .personal-description li img {
         float: left;
         margin: 0 15px 0 0;
         display: table-cell;
@@ -41,7 +40,7 @@
         padding-right: 1em;
     }
 
-    li p {
+    .personal-description li p {
         font-family: 'Open Sans',sans-serif;
         font-size: .9vmax;
         font-weight: 400;
@@ -49,7 +48,7 @@
         display: table-cell;
     }
 
-    li {
+    .personal-description li {
         padding: 10px;
         overflow: auto;
         margin-left: -80px;
@@ -59,7 +58,7 @@
         margin-bottom: 10px;
     }
 
-    li h3 {
+    .personal-description li h3 {
         margin-top: -7px;
         font-family: "Poppins",sans-serif;
         font-weight: 600;
@@ -89,26 +88,20 @@
 </style>
 </head>
 <body>
-<nav class="navbar navbar-expand-md mb-3">
-    <div class="container-fluid">
-        <a href="index.html" class="navbar-brand mr-3">Cat Mai</a>
-        <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarCollapse">
-            <div class="navbar-nav">
-                <a href="index.html" class="nav-item nav-link">Bio</a>
-                <a href="projects.html" class="nav-item nav-link">Projects</a>
-                <a href="personal.html" class="nav-item nav-link active">Personal</a>
-            </div>
-        </div>
-    </div>
-</nav>
+<div class="nav-bar-me">
+    <ul>
+        <li class="my-name"><a href="index.html">cat mai</a></li>
+        <li><a href="index.html" class="nav-me-link">Bio</a></li>
+        <li><a href="projects.html" class="nav-me-link">Projects</a></li>
+        <li><a href="personal.html" class="nav-me-link me-active">Personal</a></li>
+    </ul>
+</div>
+<br><br><br>
 
 <body>
 
 <!--PROJECT-->
-<div>
+<div class="personal-description">
     <section>
         <!-- GO/WEIQI-->
         <h1 class="personal_section">
@@ -118,16 +111,19 @@
         </h1>
         <ul>
             <li>
-                <img src="img/bomarzo.PNG" >
+                <img src="img/go_congress2019.jpg">
                 <h3>Go/Weiqi</h3>
-                <p>Go is my biggest hobby and can always make me giddy to talk about! I play Go competitively at regional,
-                    sometimes national tournaments. <a href="">My player card.</a> I managed to win the US Open 6k division
-                    in 2018! I since have improved a lot and the playing field is much more difficult now.
+                <p>Go is my biggest hobby and can always make me so excited to talk about. I play Go competitively at regional,
+                    sometimes national, tournaments. <a href="https://agagd.usgo.org/player/22937/" target="_blank">
+                        My player card.</a> I managed to win the US Open 6k division
+                    in 2018! But it sounds more impressive than it actually is. I've improved since and the playing field is much
+                    more difficult now.
                     <br><br>
-                    In summer 2020, I helped organizing the US very first <a href="https://gocongress.org">e-Go Congress</a> and co-directed the US Open.
+                    In summer 2020, I helped organizing the US very first <a href="https://www.gocongress.org" target="_blank">
+                        e-Go Congress</a> and co-directed the US Open.
                     We had around 1000 attendees :)
                     <br><br>
-                    <b>NEW!</b> I'm honored to be co-hosting the US e-Go Congress this year 2021!
+                    ←-: <i>Me and my Go partner at Go Congress 2019.</i>
                 </p>
             </li>
 
