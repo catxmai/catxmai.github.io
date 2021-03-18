@@ -16,6 +16,20 @@
   --dark-gray-color: #b5c4d6;
   --bg-color: #F8F8FA;
   --code-bg-color: #F0E8E8;
+  --charcoal: #264653ff;
+  --persian-green: #2a9d8fff;
+  --orange-yellow-crayola: #e9c46aff;
+  --sandy-brown: #f4a261ff;
+  --burnt-sienna: #e76f51ff;
+  --purple: #7b2cbf;
+  --light-purple: #5721b0;
+  --bright-green: #85cb33;
+  --bud-green: #5fad56ff;
+  --maximum-yellow-red: #f2c14eff;
+  --coral: #f78154ff;
+  --illuminating-emerald: #219806;
+  --irresistible: #b4436cff;
+  --brown: #99582a;
 }
 
 /* normalized */
@@ -23,7 +37,8 @@ html, body {
   padding: 0;
   /*margin-left: 130px;*/
   /*margin-right: 80px;*/
-  margin-left: 15%;
+  margin-top: 1.5%;
+  margin-left: 10%;
   margin-right: 10%;
   font-family: 'Open Sans', sans-serif;
   background-color: white;
@@ -39,13 +54,18 @@ html, body {
   float: left;
 }
 
-.my-name {
+.my-name, .my-name a {
   display: flex;
   justify-content: center;
-  font-weight: 700;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
   font-size: xx-large;
-  color: black;
+  color: var(--light-purple);
   margin-bottom: -.5vmax;
+}
+
+.my-name a:hover{
+  color: var(--light-purple);
 }
 
 .nav-bar-me li a {
@@ -68,6 +88,22 @@ html, body {
   font-family: "Open Sans",sans-serif;
   font-weight: 700;
   font-size: 1.3vmax;
+}
+
+.underline--magical {
+  background-image: linear-gradient(150deg, var(--light-purple) 0%, #ffffff 100%);
+  background-repeat: no-repeat;
+  background-size: 100% 0.2em;
+  background-position: 0 88%;
+  transition: background-size 0.25s ease-in;
+}
+
+.keyword {
+  color: var(--light-purple);
+}
+
+.keyword:hover {
+  color: #bf82ef;
 }
 
 p {

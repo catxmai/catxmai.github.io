@@ -21,10 +21,10 @@ var getAll = function (selector, scope) {
 if (document.getElementsByClassName('demo').length > 0) {
   var i = 0;
   var txt = `
-                I'm a Math + CS junior at Clark U. 
+                I'm a Math + CS junior. 
                 
                 ## Research: HCI, Learning Sciences
-                - HCI: social media-collective action, mental health
+                - HCI: social media, mental health
                 - Learning Sciences: discourse analysis, intelligent tutoring system
               
                 ## Free time: play Go, indoor garden, puzzles, play Go, code`;

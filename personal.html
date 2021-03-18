@@ -46,6 +46,7 @@
         font-weight: 400;
         text-align: justify;
         display: table-cell;
+        color: black;
     }
 
     .personal-description li {
@@ -63,6 +64,7 @@
         font-family: "Poppins",sans-serif;
         font-weight: 600;
         font-size: large;
+        color: #292828;
     }
 
     h1.personal_section{
@@ -71,18 +73,9 @@
         font-weight: 600;
     }
 
-    body{
-        margin-top: 7%;
-        margin-left: 10%;
-        margin-right: 10%;
-    }
-
-    .underline--magical {
-        background-image: linear-gradient(150deg, #0989cd 0%, #ffffff 100%);
-        background-repeat: no-repeat;
-        background-size: 100% 0.2em;
-        background-position: 0 88%;
-        transition: background-size 0.25s ease-in;
+    h3.personal_section {
+        font-weight: 600;
+        font-size: 2.3vmax;
     }
 
 </style>
@@ -91,9 +84,9 @@
 <body>
 <div class="nav-bar-me">
     <ul>
-        <li><a href="index.html" class="nav-me-link">Bio</a></li>
-        <li><a href="projects.html" class="nav-me-link">Projects</a></li>
-        <li><a href="personal.html" class="nav-me-link me-active">Personal</a></li>
+        <li><a href="index.html" class="nav-me-link">bio</a></li>
+        <li><a href="projects.html" class="nav-me-link">projects</a></li>
+        <li><a href="personal.html" class="nav-me-link me-active">personal</a></li>
     </ul>
 </div>
 <br>
@@ -104,16 +97,16 @@
 <div class="personal-description">
     <section>
         <!-- GO/WEIQI-->
-        <h1 class="personal_section">
+        <h3 class="personal_section">
             <br>
             <span class="underline--magical">Personal</span>
             <br>
-        </h1>
+        </h3>
         <ul>
             <li>
                 <img src="img/go_congress2019.jpg">
                 <h3>Go/Weiqi</h3>
-                <p>Go is my biggest hobby and can always make me so excited to talk about. I play Go competitively at regional,
+                <p>Go is my biggest hobby and always makes me so excited to talk about. I play Go competitively at regional,
                     sometimes national, tournaments. <a href="https://agagd.usgo.org/player/22937/" target="_blank">
                         My player card.</a> I managed to win the US Open 6k division
                     in 2018! But it sounds more impressive than it actually is. I've improved since and the playing field is much
@@ -121,18 +114,25 @@
                     <br><br>
                     In summer 2020, I helped organizing the US very first <a href="https://www.gocongress.org" target="_blank">
                         e-Go Congress</a> and co-directed the US Open.
-                    We had around 1000 attendees :)
+                    We had around 1000 attendees and I'm still very proud of it :)
                     <br><br>
                     ←-: <i>Me and my Go partner at Go Congress 2019.</i>
                 </p>
             </li>
 
             <li>
-                <img src="img/teamtrees.jpg" >
-                <h3>#TeamTrees - 20 Millions Tree by 2020</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    Lorem ipsum dolor sit amet, consecteturadipiscing elit. Praesent euismod ultrices ante, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent euismod ultrices ante, ac laoreet nulla vestibulum adipiscing. Nam quis justo in augue auctor imperdiet. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent euismod ultrices ante, ac laoreet nulla vestibulum adipiscing. Nam quis justo in augue auctor imperdiet. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent euismod ultrices ante, ac laoreet nulla vestibulum adipiscing. Nam quis justo in augue auctor imperdiet. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent euismod ultrices ante, ac laoreet nulla vestibulum adipiscing. Nam quis justo in augue auctor imperdiet. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent euismod ultrices ante, ac laoreet nulla vestibulum adipiscing. Nam quis justo in augue auctor imperdiet. ac laoreet nulla vestibulum adipiscing. Nam quis justo in augue auctor imperdiet.
-                    Praesent euismod ultrices ante, ac laoreet nulla vestibulum adipiscing. Nam quis justo in augue auctor imperdiet.</p>
+                <img src="img/stopforwarding.jpg" >
+                <h3>Recreational Coding</h3>
+                <p>
+                    Outside of work, my coding projects have been quite silly. The more professional ideas:
+                    <br><br>
+                    1. Still in the work, but I've been working on my Go bot using a tutorial. Next step is to implement it to use community-trained weights.
+                    <br><br>
+                    2. I'm inspired by <a href="https://www.inc.com/geoffrey-james/401-reasons-your-email-is-spam.html" target="_blank"> this article</a>
+                     and the song <a href="https://www.youtube.com/watch?v=KCSA7kKNu2Y">Stop Forwarding That Crap to Me</a> by Weird Al,
+                     and have been thinking about writing a url shortenter/email
+                    transformer to make your email as spammy-sounding and as suspicious as possible. I know it serves no purpose, but the idea greatly inspires me.
+                </p>
             </li>
         </ul>
 

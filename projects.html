@@ -18,12 +18,6 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
 
-    body{
-        margin-top: 7%;
-        margin-left: 10%;
-        margin-right: 10%;
-    }
-
     .project_section {
         font-family: 'Poppins',sans-serif;
         margin-left: -28px;
@@ -45,6 +39,7 @@
         font-weight: 400;
         text-align: justify;
         display: table-cell;
+        color: black;
     }
 
     .project-description li {
@@ -62,20 +57,38 @@
         font-family: "Poppins",sans-serif;
         font-weight: 600;
         font-size: large;
+        color: #292828;
     }
 
-    h1.project_section{
-        font-size: xx-large;
-        font-family: "Poppins",sans-serif;
+    h3.project_section {
         font-weight: 600;
+        font-size: 2.3vmax;
     }
 
-    .underline--magical {
-        background-image: linear-gradient(150deg, #0989cd 0%, #ffffff 100%);
-        background-repeat: no-repeat;
-        background-size: 100% 0.2em;
-        background-position: 0 88%;
-        transition: background-size 0.25s ease-in;
+    .active-tag {
+        color: #4CAF50;
+    }
+
+    .upcoming-tag {
+        color: var(--persian-green)
+    }
+
+    .class-project-tag {
+        color: var(--purple);
+    }
+
+    .maintaining-tag {
+        color: var(--brown);
+    }
+
+    .status-tag {
+        font-size: 1.1vmax;
+        font-weight: 800;
+        margin-bottom: 1vmax;
+    }
+
+    .project-description a {
+        text-decoration: underline;
     }
 
 </style>
@@ -83,9 +96,9 @@
 <p class="my-name"><a href="index.html">cat mai</a></p>
 <div class="nav-bar-me">
     <ul>
-        <li><a href="index.html" class="nav-me-link">Bio</a></li>
-        <li><a href="projects.html" class="nav-me-link me-active">Projects</a></li>
-        <li><a href="personal.html" class="nav-me-link">Personal</a></li>
+        <li><a href="index.html" class="nav-me-link">bio</a></li>
+        <li><a href="projects.html" class="nav-me-link me-active">projects</a></li>
+        <li><a href="personal.html" class="nav-me-link">personal</a></li>
     </ul>
 </div>
 <br>
@@ -94,82 +107,120 @@
 <div class="project-description">
     <section>
         <!-- SOCIAL COMPUTING-->
-        <h1 class="project_section">
+        <h3 class="project_section">
             <br>
             <span class="underline--magical">Social Computing</span>
             <br>
-        </h1>
+        </h3>
         <ul>
             <li>
+                <div id="social_computing">
+                    <img src="img/teamtrees.jpg" >
+                    <div class="status-tag active-tag">Active</div>
+                    <h3>#TeamTrees - 20 Millions Tree by 2020</h3>
+                    <p>#TeamTrees is a year-long 2019 initiative that managed to raise $20 million before
+                        2020 to plant 20 million trees. Activism on YouTube takes on many form, for example, using kill count
+                        in Diablo to donate to the campaign. Using YouTube's metadata, we want to investigate how different
+                        category of content creators participate in a good-cause social media campaign via a case study of #TeamTrees.
+                        </p>
+                </div>
+            </li>
+
+            <li>
                 <img src="img/stayhome.jpg">
-                <h3>#StayHome #WithMe - A Call for Videos During COVID-19</h3>
-                <p>Lorem ipsum dolor sit amet, consecteturadipiscing elit. Praesent euismod ultrices ante,
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent euismod ultrices ante, ac laoreet nulla vestibulum adipiscing. Nam quis justo in augue auctor imperdiet.
-                    Lorem ipsum dolor sit amet, consectetur
-                    Lorem ipsum dolor sit amet, consecteturadipiscing elit. Praesent euismod ultrices ante,
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent euismod ultrices ante, ac laoreet nulla vestibulum adipiscing. Nam quis justo in augue auctor imperdiet.
-                    Lorem ipsum dolor sit amet,
-                    Lorem ipsum dolor sit amet, consecteturadipiscing elit. Praesent euismod ultrices ante,
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent euismod ultrices ante, ac laoreet nulla vestibulum adipiscing. Nam quis justo in augue auctor imperdiet.
-                    Lorem ipsum dolor sit amet, consectetur
-                    Lorem ipsum dolor sit amet, consecteturadipiscing elit. Praesent euismod ultrices ante,
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent euismod ultrices ante, ac laoreet nulla vestibulum adipiscing. Nam quis justo in augue auctor imperdiet.
-                    Lorem ipsum dolor sit amet, conseadipiscing elit. Praesent euismod ultrices ante, ac laoreet nulla vestibulum adipiscing. Nam quis justo in augue auctor imperdiet.
+                <h3>#StayHome #WithMe: How Do YouTubers Help With COVID-19 Loneliness?</h3>
+                <p>  User-shared videos generate parasocial attachment and virtual connectedness. However, there is limited knowledge
+                    of how creators contributed videos during disasters to provide social provisions as disaster-relief.
+                    We used Weiss's loneliness theory to examine how YouTubers provided friend-like, mentor-like,
+                    and family-like provisions through videos in different styles.
+                    <br><br>
+                    <a href="index.html#shwm"
+                       style="color: #232323">
+                    <b>#StayHome #WithMe: How Do YouTubers Help With COVID-19 Loneliness?</b><br></a>
+                    <i>Shuo Niu, Ava Bartolome*, Cat Mai*, and Nguyen B. Ha*</i> CHI '21
+                    <br><br>
                 </p>
             </li>
 
             <li>
-                <img src="img/teamtrees.jpg" >
-                <h3>#TeamTrees - 20 Millions Tree by 2020</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    Lorem ipsum dolor sit amet, consecteturadipiscing elit. Praesent euismod ultrices ante, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent euismod ultrices ante, ac laoreet nulla vestibulum adipiscing. Nam quis justo in augue auctor imperdiet. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent euismod ultrices ante, ac laoreet nulla vestibulum adipiscing. Nam quis justo in augue auctor imperdiet. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent euismod ultrices ante, ac laoreet nulla vestibulum adipiscing. Nam quis justo in augue auctor imperdiet. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent euismod ultrices ante, ac laoreet nulla vestibulum adipiscing. Nam quis justo in augue auctor imperdiet. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent euismod ultrices ante, ac laoreet nulla vestibulum adipiscing. Nam quis justo in augue auctor imperdiet. ac laoreet nulla vestibulum adipiscing. Nam quis justo in augue auctor imperdiet.
-                    Praesent euismod ultrices ante, ac laoreet nulla vestibulum adipiscing. Nam quis justo in augue auctor imperdiet.</p>
+                <img src="img/wordcloud_covid.png">
+                <h3>Emotional Analysis Via Content Creation on YouTube During COVID-19</h3>
+                <p> This is my final project for my class with Nguyen Ha. We were interested in the emotional response
+                    and coping mechanism of content creators on YouTube during COVID-19. We applied the fight-or-flight framework to analyze how content
+                    creators could contribute to mental health for audience.
+                    Our approach was to analyze the description and hashtags of the video and use a classifier to create a predictive
+                    tagging model.
+                    <br><br>
+                    <strong>Remark:</strong> I wish our analysis on emotional analysis was stronger and we had dived deeper into the evaluation of our classifier.
+                    Affection and support via YouTube content is explored in depth and more rigorously in our lab's <i>#StayHome #WithMe - A Call for Videos During COVID-19</i> paper.
+                    <br><br>
+                    <a href="pdfs/FinalReport_DS125.pdf" target="_blank">Final Report</a>
+                </p>
             </li>
         </ul>
         <!-- STEM EDUCATION-->
         <br><br>
-        <h1 class="project_section">
+        <h3 class="project_section">
             <span class="underline--magical">Learning Sciences</span>
-        </h1>
+        </h3>
         <ul>
             <li>
-                <img src="img/mber.PNG" >
-                <h3>Biology in an ESL Classroom</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent euismod ultrices ante, ac laoreet nulla vestibulum adipiscing. Nam quis justo in augue auctor imperdiet.</p>
+                <img src="img/thirstyvampire.jpg">
+                <div class="status-tag upcoming-tag">Upcoming</div>
+                <h3>AdaptErrEx - Learning Decimals through Game</h3>
+                <p>This summer 2021, I will be working with Dr. Bruce McLaren and his lab on intelligent tutoring system, specifically in
+                    education games. Since February, I have been doing some Decimal Point game testing for them.</p>
             </li>
 
             <li>
-                <img src="img/alienfriends.PNG">
-                <h3>AdaptErrEx - Learning Decimals through Game</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent euismod ultrices ante, ac laoreet nulla vestibulum adipiscing. Nam quis justo in augue auctor imperdiet.</p>
+                <div id="NGSX">
+                    <img src="img/mber.PNG" >
+                </div>
+                    <h3>Classroom Discourse Analysis for Student-driven Conversation</h3>
+                    <p>For 3 years, I worked with Dr. Sarah Michaels at the wonderful <a href="https://www.ngsx.org/" target="_blank">NGSX Learning Lab</a>
+                        to observe and improve science curriculum
+                        for underfunded Worcester high schools. We in turn used our field data to improve professional development for K-12 science educators.
+                        <br><br>
+                        I was particularly interested in using <a href="https://www.researchgate.net/publication/342163333_Classroom_Discourse_Analyzer_CDA_A_Discourse_Analytic_Tool_for_Teachers" target="_blank">
+                            Classroom Discourse Analyzer</a> and building a machine learning model
+                        to understand how different factors like teacher's talk moves, class composition, seating arrangement would
+                        affect discussion equity -- the notion that students deserve to lead classroom discussion and talk time.
+                        We looked at turn-depth of a teacher-student conversation and tried to find patterns of highly productive
+                        student-driven discussion.
+                        Unfortunately, our work did not result in any tangible output.
+                    </p>
+
             </li>
         </ul>
         <!--OTHER -->
         <br><br>
-        <h1 class="project_section">
+        <h3 class="project_section">
             <span class="underline--magical">Other</span>
-        </h1>
+        </h3>
         <ul>
             <li>
-                <img src="img/bomarzo.PNG">
-                <h3>Geovisualization of Garden of Bomarzo</h3>
-                <p>I used Agisoft Metashape to render 3D models based on photos from Garden of Bomarzo (Italy). During this
-                    summer project, we were building prototypes locally and developing proof of concept for the multi-institution
-                    conservation project.
-                    <br>
-                    My early attempts at creating the photogrammetry of the statues helped Dr. Garton’s colleague to secure a
-                    grant and helped Dr. Garton to present the project to grant boards.</p>
+                <img src="img/YoutubeAPI.jpg">
+                <div class="status-tag maintaining-tag">Maintaining</div>
+                <h3>YouTube Scraper and Decoder Python Package</h3>
+                <p>
+                    Dr. Shuo Niu and I wrote the beginner-friendly YouTube crawler pipeline and a .json decoder specifically for retrieved
+                    file from YouTube API request. I packaged it and am currently the lead developer. My lab has been using this package for several projects.
+                    After I'm done with documentation and unit test, we will be ready to release the source code.
+                    <br><br>
+                    <a href="https://pypi.org/project/clarku-youtube-crawler/" style="text-decoration: underline" target="_blank">
+                    Stable release with limited docs on PyPI.</a>
+                </p>
             </li>
 
             <li>
                 <img src="img/bomarzo.PNG">
-                <h3>YouTube Crawler and Decoder Python Package</h3>
-                <p>
-                    Dr. Shuo Niu and I wrote the beginner-friendly YouTube crawler pipeline and a .json decoder specifically for retrieved
-                    file from YouTube API request. I packaged it and currently the main maintainer. My lab has been using this package for several projects.
-                    After I'm done with documentation and unit test, we will be ready to release the source code.
-                    <br> <a href="" style="text-decoration: underline">Stable release with limited docs on PyPI.</a>
-                </p>
+                <h3>Geovisualization of Garden of Bomarzo</h3>
+                <p>I used Agisoft Metashape to render 3D models based on photos from Garden of Bomarzo (Italy). During this
+                    summer project, Dr. John Garton and I were building prototypes locally and developing proof of concept for the multi-institution
+                    conservation and reconstruction project.
+                    <br><br>
+                    My early attempts at creating the photogrammetry of the statues helped Dr. Garton’s colleague to secure a
+                    national Futures grant and helped Dr. Garton to present the project to grant boards.</p>
             </li>
         </ul>
     </section>
