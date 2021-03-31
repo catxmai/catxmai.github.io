@@ -188,7 +188,7 @@ table td:first-child {
   text-align: center;
   color: black;
   font-family: "Open Sans", sans-serif;
-  font-size: x-small;
+  font-size: .8vmax;
 }
 
 @keyframes fadeUp {

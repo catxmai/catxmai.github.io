@@ -1,0 +1,186 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Cat Mai</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/railscasts.min.css">
+    <link rel="stylesheet" href="scribbler-global.css">
+    <link rel="stylesheet" href="scribbler-landing.css">
+    <link rel="icon" href="icons/cat_icon.png">
+
+</head>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+
+    active{
+        background-color: #4CAF50;
+        color: white;
+    }
+
+    .bomarzo_section {
+        font-family: 'Poppins',sans-serif;
+        margin-left: -28px;
+    }
+
+    .bomarzo-description li a {
+        text-decoration: underline;
+    }
+
+    .bomarzo-description li img,
+    .bomarzo-description li iframe{
+        float: left;
+        margin: 0 15px 0 0;
+        display: table-cell;
+        vertical-align: middle;
+        width: 50%;
+        padding-right: 1em;
+    }
+
+    .bomarzo-description li p{
+        font-family: 'Open Sans',sans-serif;
+        font-size: .9vmax;
+        font-weight: 400;
+        text-align: justify;
+        display: table-cell;
+        color: black;
+    }
+
+    h6.bomarzo_section {
+        font-family: 'Open Sans',sans-serif;
+        font-size: .9vmax;
+        font-weight: 400;
+        color: black;
+        margin-left: -28px;
+        margin-right: -100px;
+    }
+
+    .bomarzo-description li {
+        padding: 10px;
+        overflow: auto;
+        margin-left: -80px;
+        margin-right: -100px;
+        border-bottom: 1px solid #ccc;
+        border-collapse: collapse;
+        margin-bottom: 10px;
+    }
+
+    .bomarzo-description li h3 {
+        margin-top: -7px;
+        font-family: "Poppins",sans-serif;
+        font-weight: 600;
+        font-size: large;
+        color: #292828;
+    }
+
+    h1.bomarzo_section{
+        font-size: xx-large;
+        font-family: "Poppins",sans-serif;
+        font-weight: 600;
+    }
+
+    h3.bomarzo_section {
+        font-weight: 600;
+        font-size: 2.3vmax;
+    }
+
+</style>
+</head>
+<p class="my-name"><a href="index.html">cat mai</a></p>
+<body>
+<div class="nav-bar-me">
+    <ul>
+        <li><a href="index.html" class="nav-me-link">bio</a></li>
+        <li><a href="projects.html" class="nav-me-link">projects</a></li>
+        <li><a href="personal.html" class="nav-me-link">personal</a></li>
+    </ul>
+</div>
+<br>
+
+<body>
+
+<!--PROJECT-->
+<div class="bomarzo-description">
+    <section>
+        <h3 class="bomarzo_section">
+            <br>
+            <span class="underline--magical">Bomarzo</span>
+            <br>
+        </h3>
+        <h6 class="bomarzo_section">
+            We aim to create open-access three-dimensional (3D) educational model and an integrated virtual reality
+            environment of the site of Sacro Bosco (or Sacred Wood) in Bomarzo, Italy. We hope to create a tool
+            that will aid in the
+            monument’s preservation by allowing people to learn of its unique design without having to be physically
+            present at the site.
+            <br><br>
+            I used Agisoft Metashape and played around with different methods to achieve the following results. My early attempts at processing the model of the statues helped Dr. Garton’s colleague to secure a
+            national Futures grant and helped Dr. Garton to present the project to grant boards.
+        </h6>
+        <br>
+        <ul>
+            <li>
+                <img src="img/bomarzo/orso_v1.png">
+                <h3>First try</h3>
+                <p>First try at the model. A lot of noise and not very clear figure.
+                </p>
+            </li>
+
+            <li>
+                <img src="img/bomarzo/orso_cleaned_1.PNG">
+                <h3>Adjusting cloud points</h3>
+                <p>
+                    Adjusting parameters and cleaning up some noise. Still not very good. Processing took a long time
+                    so it was hard to play around and see quick results.
+                </p>
+            </li>
+
+            <li>
+                <img src="img/bomarzo/orso_dense.PNG" height="50%">
+                <h3>Trying dense cloud points</h3>
+                <p>
+                    I combed through forum posts and watched some tutorials. I played around with the angle tagging,
+                    parameters, and crawled some more pics from Google. A world of difference!
+                    <br><br>
+                    This took me around 1.5 months including learning how to do baby version of photogrammetry. Each processing
+                    trial took around a day to finish.
+                </p>
+            </li>
+
+            <li>
+                <img src="img/bomarzo/orso_final.PNG" height="50%">
+                <iframe width="500" height="300"
+                        src="https://www.youtube.com/embed/2l_WwwN6O5o"
+                        allow="fullscreen;">
+                </iframe>
+                <h3>Final version & Demo</h3>
+                <p>
+                    Final version!
+                    <br><br>
+                    This was the version that Dr. Garton and colleagues used for their grant applications.
+                </p>
+            </li>
+
+        </ul>
+
+
+    </section>
+</div>
+
+
+<br><br>
+
+
+<br><br>
+
+
+<footer class="footer">©2021 by cat mai</footer>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+
+</body>
+</html>
