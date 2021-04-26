@@ -20,14 +20,12 @@ var getAll = function (selector, scope) {
 // setup typewriter effect in the terminal demo
 if (document.getElementsByClassName('demo').length > 0) {
   var i = 0;
-  var txt = `
-                I'm a Math + CS junior. 
-                
-                ## Research: HCI, Learning Sciences
-                - HCI: social media, mental health
-                - Learning Sciences: discourse analysis, intelligent tutoring system
+  var txt = `   
+                📖📖📖 Research: 
+                      - HCI: social media, online campaigns, mental health
+                      - Learning Sciences: discourse analysis
               
-                ## Free time: play Go, indoor garden, puzzles, play Go, code`;
+                🎲🎲🎲 Free time: play Go, indoor garden, puzzles, play Go, code`;
   var speed = 0;
 
   function typeItOut () {
