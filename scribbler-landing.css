@@ -24,8 +24,8 @@ nav {
   text-align: justify;
   font-family: "Open Sans", sans-serif;
   font-weight: 400;
-  font-size: 1.1vmax;
-  line-height: 1.7vmax;
+  font-size: 1.2vmax;
+  line-height: 1.9vmax;
 }
 
 .hero__terminal {
@@ -37,7 +37,7 @@ nav {
   padding: 0 1rem;
   border-radius: 4px;
   background-color: #232323;
-  min-height: 15vmax;
+  min-height: 13vmax;
   animation: fadeUp 1s;
   box-shadow: 0px 12px 36.8px 9.2px rgba(0, 0, 0, 0.1);
 }
