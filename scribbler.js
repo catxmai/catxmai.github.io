@@ -21,11 +21,11 @@ var getAll = function (selector, scope) {
 if (document.getElementsByClassName('demo').length > 0) {
   var i = 0;
   var txt = `   
-                📖📖📖 Research: 
+                🔍🔍🔍 Research: 
                       - HCI: social media, online campaigns, mental health
                       - Learning Sciences: discourse analysis
               
-                🎲🎲🎲 Free time: play Go, indoor garden, puzzles, play Go, code`;
+                🌱🌱🌱 Free time: play Go, indoor garden, puzzles, play Go, code`;
   var speed = 0;
 
   function typeItOut () {
