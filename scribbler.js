@@ -23,9 +23,9 @@ if (document.getElementsByClassName('demo').length > 0) {
   var txt = `   
                 🔍🔍🔍 Research: 
                       - HCI: social media, online campaigns, mental health
-                      - Learning Sciences: discourse analysis
+                      - Learning sci.: discourse analysis
               
-                🌱🌱🌱 Free time: play Go, indoor garden, puzzles, play Go, code`;
+                🌱🌱🌱 Free time: play Go, garden, play Go, code`;
   var speed = 0;
 
   function typeItOut () {
