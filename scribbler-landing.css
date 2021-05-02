@@ -20,12 +20,12 @@ nav {
 }
 
 .hero__description {
-  margin: 1rem auto 2rem auto;
+  /*margin: 1rem auto 2rem auto;*/
   text-align: justify;
   font-family: "Open Sans", sans-serif;
   font-weight: 400;
-  font-size: 1.2vmax;
-  line-height: 1.9vmax;
+  font-size: 1.1vmax;
+  line-height: 1.8vmax;
 }
 
 .hero__terminal {

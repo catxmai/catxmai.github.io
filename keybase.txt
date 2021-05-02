@@ -1,0 +1,56 @@
+==================================================================
+https://keybase.io/catxmai
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://catxmai.github.io
+  * I am catxmai (https://keybase.io/catxmai) on keybase.
+  * I have a public key ASAlzxQO1AN2lPHxUk8Cv9Urxi9zPLENVlpKxaRrhL0dPgo
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "012025cf140ed4037694f1f1524f02bfd52bc62f733cb10d565a4ac5a46b84bd1d3e0a",
+      "host": "keybase.io",
+      "kid": "012025cf140ed4037694f1f1524f02bfd52bc62f733cb10d565a4ac5a46b84bd1d3e0a",
+      "uid": "019ceca8bfcb05bbf940fada17493519",
+      "username": "catxmai"
+    },
+    "merkle_root": {
+      "ctime": 1619919791,
+      "hash": "495c90d0edd0f4c0ed5215d95c8e691925870a985f45162e8baa07eb0685f783796e2972d85cc427ecc89252f76c7e464994ceba8e2be5e8955905317f6ac0f9",
+      "hash_meta": "ee2b422ab008f7018fc39ef537f606d04508eaee7250b217a35e597d86c97b40",
+      "seqno": 19804373
+    },
+    "service": {
+      "entropy": "t7VDDhuO97uptGdDzol0lkhB",
+      "hostname": "catxmai.github.io",
+      "protocol": "https:"
+    },
+    "type": "web_service_binding",
+    "version": 2
+  },
+  "client": {
+    "name": "keybase.io go client",
+    "version": "5.6.0"
+  },
+  "ctime": 1619919831,
+  "expire_in": 504576000,
+  "prev": "85fd55beaf58e75d75a5cf164617ae4e8372ef870e47e2cb5a8f1420fca8f375",
+  "seqno": 4,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+hKRib2R5hqhkZXRhY2hlZMOpaGFzaF90eXBlCqNrZXnEIwEgJc8UDtQDdpTx8VJPAr/VK8YvczyxDVZaSsWka4S9HT4Kp3BheWxvYWTESpcCBMQghf1Vvq9Y5111pc8WRheuToNy74cOR+LLWo8UIPyo83XEIJU+9DSR+MoXDhHSW8NUoFasu1ezpf9N115HOGKAFPKiAgHCo3NpZ8RA2XJRg6iBbY387oZg87/U3yKSxMy+7N/vcROGjnYwhnqOQNhK/pwz0Bn04ZSrXzwcuvlrAf/Ygc1KOSBpVc+TAqhzaWdfdHlwZSCkaGFzaIKkdHlwZQildmFsdWXEIGOTGjnwcMsPH2DCbjnmLsFGaMUU1V8bM7BUcwuUgEhco3RhZ80CAqd2ZXJzaW9uAQ==
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/catxmai
+
+==================================================================
