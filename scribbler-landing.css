@@ -42,12 +42,8 @@ nav {
   box-shadow: 0px 12px 36.8px 9.2px rgba(0, 0, 0, 0.1);
 }
 
-.demo {
+.demo, .intro-code {
   color: #59ff11 !important;
-}
-
-.intro-code {
-  color: #02ffea !important;
 }
 
 .hero__terminal pre {
