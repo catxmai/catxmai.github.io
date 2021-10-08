@@ -33,14 +33,14 @@
         display: table-cell;
         vertical-align: middle;
         width: 35%;
-        padding-right: 1em;
+        padding-right: 1.3em;
     }
 
 
     .project-description li p {
         font-family: 'Open Sans',sans-serif;
-        font-size: 1vmax;
-        line-height: 1.4vmax;
+        font-size: 1.1vmax;
+        line-height: 1.7vmax;
         font-weight: 400;
         /*text-align: justify;*/
         display: table-cell;
@@ -83,7 +83,7 @@
     }
 
     .maintaining-tag {
-        color: var(--brown);
+        color: #4CAF50;
     }
 
     .status-tag {
@@ -283,8 +283,8 @@
                 <img src="img/remotion.jpg" id="automotion">
                 <h3>Automotion: Predicting Emotion
                     and Attention from Smartphone Behavioral Data</h3>
-                <p>During summer 2021, I worked with Dr. Jeff Huang at Brown University with his Brown HCI team.
-                     I mainly worked on Automotion, software-hardware platform for running remote usability testing for mobile devices.
+                <p>During summer 2021, I worked with Dr. Jeff Huang at Brown University with his HCI lab.
+                     I worked on Automotion, software-hardware platform for running remote usability testing for mobile devices.
                      <br><br>
                     I modified, retrained models to predict users' affect from finger pressure and 6dof motion replay.
                      I reviewed literature on affect prediction using mobile computing and rewrote the paper for resubmission.</p>
@@ -294,31 +294,41 @@
                 <img src="img/drug_vids.JPG" id="drug">
                 <h3>Investigating Drug Addiction Discourse on YouTube</h3>
                 <p>
-                    by analyzing 166 YouTube videos. We found that YouTubers leverage videos to disclose personal addiction
+                    By analyzing 166 YouTube videos, we found that YouTubers leverage videos to disclose personal addiction
                     experiences, provide professional recommendations, and express addiction-related opinions and lifestyles.
 
-                    <b>#StayHome #WithMe: How Do YouTubers Help With COVID-19 Loneliness?</b><br>
-                    <i>Shuo Niu, Ava Bartolome*, Cat Mai*, and Nguyen B. Ha*</i> <br>
-                    CHI '21
-                    <a href="pdfs/stayhome.pdf" target="_blank" class="paper_link">[pdf]</a>
+                    I watched and tagged videos using grounded theory, and discussed with the group with common themes.
+                    <br><br>
+                    <span style="font-size: 1vmax">
+                        <b>Investigating Drug Addiction Discourse on YouTube</b><br>
+                        <span>Katherine McKim, Cat Mai, Danielle Hess, and Shuo Niu</span><br>
+                        CSCW '21 (poster) <a href="pdfs/drug2021.pdf" target="_blank" class="paper_link">[pdf]</a>
+                    </span>
                     <br><br>
                 </p>
             </li>
 
             <li>
-                    <img src="img/teamtrees.jpg" id="teamtrees">
-                    <h3>#TeamTrees: Investigating How YouTubers Participate in a
-                        Social Media Campaign</h3>
-                    <p>#TeamTrees is a year-long 2019 initiative that managed to raise $20 million before
-                        2020 to plant 20 million trees. Using YouTube's metadata, we investigated how different
-                        category of content creators participate in a good-cause social media campaign
-                        via a case study of #TeamTrees.<br><br>
-                        <b>#TeamTrees: Investigating How YouTubers Participate in a Social Media Campaign</b><br>
-                        <i>Shuo Niu, Cat Mai, Katherine G. McKim, and D. Scott McCrickard</i> <br>
-                        CSCW '21
-                        <a href="pdfs/teamtrees.pdf" target="_blank" class="paper_link">[pdf]</a>
-                        <br><br>
-                    </p>
+                <img src="img/teamtrees.jpg" id="teamtrees">
+                <h3>#TeamTrees: Investigating How YouTubers Participate in a
+                    Social Media Campaign</h3>
+                <p>#TeamTrees is a year-long 2019 initiative that managed to raise $20 million before
+                    2020 to plant 20 million trees. Using YouTube's metadata, we investigated how different
+                    category of content creators participate in a good-cause social media campaign
+                    via a case study of #TeamTrees.<br><br>
+                    I crawled the data set and coded the video-tagging interface. I watched and
+                    tagged the videos with other authors, did the analysis, and
+                    wrote parts of the paper.
+                    <br><br>
+                    <span style="font-size: 1vmax">
+                    <b>#TeamTrees: Investigating How YouTubers Participate in a Social Media Campaign</b><br>
+                    <span>Shuo Niu, Cat Mai, Katherine G. McKim, and D. Scott McCrickard <br>
+                    CSCW '21
+                    <a href="pdfs/teamtrees.pdf" target="_blank" class="paper_link">[pdf]</a></span>
+                    <br><br>
+
+                </span>
+                </p>
             </li>
 
             <li>
@@ -331,11 +341,12 @@
                     I crawled the dataset for the project and automated the data pipeline. The whole lab then participated in
                     ground theory analysis to come up with the provision and video styles specific to this campaign.
                     <br><br>
-
-                    <b>#StayHome #WithMe: How Do YouTubers Help With COVID-19 Loneliness?</b><br>
-                    <i>Shuo Niu, Ava Bartolome*, Cat Mai*, and Nguyen B. Ha*</i> <br>
-                    CHI '21
-                    <a href="pdfs/stayhome.pdf" target="_blank" class="paper_link">[pdf]</a>
+                    <span style="font-size: 1vmax">
+                        <b>#StayHome #WithMe: How Do YouTubers Help With COVID-19 Loneliness?</b><br>
+                        <span>Shuo Niu, Ava Bartolome*, Cat Mai*, and Nguyen B. Ha*</span> <br>
+                        CHI '21
+                        <a href="pdfs/stayhome.pdf" target="_blank" class="paper_link">[pdf]</a>
+                        </span>
                     <br><br>
                 </p>
             </li>
@@ -392,7 +403,7 @@
                 <p>
                     Dr. Shuo Niu and I wrote the beginner-friendly YouTube crawler pipeline and a .json decoder specifically for retrieved
                     file from YouTube API request. I packaged it and am currently the lead developer. My lab has been using this package for several projects.
-                    After I'm done with documentation and unit test, we will be ready to release the source code.
+
                     <br><br>
                     <a href="https://pypi.org/project/clarku-youtube-crawler/"
                        class="paper_link" target="_blank">[stable release (limited docs)]</a>

@@ -22,7 +22,7 @@
   --sandy-brown: #f4a261ff;
   --burnt-sienna: #e76f51ff;
   --purple: #7b2cbf;
-  --light-purple: #5721b0;
+  --light-purple: #792ad9;
   --bright-green: #85cb33;
   --bud-green: #5fad56ff;
   --maximum-yellow-red: #f2c14eff;
@@ -137,6 +137,10 @@ a {
 
 .paper_link, .paper_link:hover {
   color: #e140f3; !important;
+}
+
+.paper_project {
+  font-size: 1.4vmax;
 }
 
 /*a.pubs {*/
