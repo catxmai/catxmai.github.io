@@ -15,8 +15,8 @@ nav {
 
 .hero__title {
   font-weight: 900;
-  font-family: 'Poppins', sans-serif;
-  font-size: 3vmax;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 2vmax; !important;
 }
 
 .hero__description {

@@ -57,8 +57,8 @@ html, body {
 .my-name, .my-name a {
   display: flex;
   justify-content: center;
-  font-family: "Poppins", sans-serif;
-  font-weight: 600;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 800;
   font-size: xx-large;
   color: var(--light-purple);
   margin-bottom: -.5vmax;
@@ -113,15 +113,36 @@ p {
   color: #4A4A4A;
 }
 
-a, a:hover {
-  text-decoration: none;
+.social_buttons a:hover {
+  text-decoration: none; !important;
   color: var(--primary-color);
 }
 
-a.pubs, a.pubs:hover {
-  text-decoration: none;
-  color: white !important;
+a {
+  color: var(--primary-color);
 }
+
+.intro a:hover {
+  color: #959DA5; !important;
+  text-decoration: none; !important;
+}
+
+.intro a{
+  color: #7b2cbf;
+}
+
+.my-name a:hover {
+  text-decoration: none;
+}
+
+.paper_link, .paper_link:hover {
+  color: #e140f3; !important;
+}
+
+/*a.pubs {*/
+/*  text-decoration: none;*/
+/*  color: white !important;*/
+/*}*/
 
 hr {
   padding: 1rem 0;

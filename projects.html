@@ -19,8 +19,12 @@
 <style>
 
     .project_section {
-        font-family: 'Poppins',sans-serif;
+        font-family: 'Open Sans',sans-serif;
         margin-left: -28px;
+    }
+
+    .project-description {
+        margin-left: 7vmax; !important;
     }
 
     .project-description li img {
@@ -55,10 +59,10 @@
 
     li h3 {
         margin-top: -7px;
-        font-family: "Poppins",sans-serif;
+        font-family: "Open Sans",sans-serif;
         font-weight: 600;
-        font-size: 1.6vmax;
-        color: #300d54;
+        font-size: 1.4vmax;
+        color: #5d19a1;
     }
 
     h3.project_section {
@@ -89,6 +93,107 @@
     }
 
 
+    #sidebar-wrapper {
+        z-index: 1000;
+        position: fixed;
+        left: 250px;
+        width: 0;
+        height: 100%;
+        margin-left: -250px;
+        margin-right: -600px;
+        /*overflow-y: auto;*/
+        background: #ffffff;
+        -webkit-transition: all 0.5s ease;
+        -moz-transition: all 0.5s ease;
+        -o-transition: all 0.5s ease;
+        transition: all 0.5s ease;
+    }
+
+
+
+    #page-content-wrapper {
+        width: 60%;
+        position: absolute;
+        padding: 15px;
+    }
+
+    #wrapper.toggled #page-content-wrapper {
+        position: absolute;
+        margin-right: -0px;
+    }
+
+    /* Sidebar Styles */
+
+    .sidebar-nav {
+        position: absolute;
+        top: 0;
+        width: 70%;!important;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+
+    .sidebar-nav li {
+        text-indent: 20px;
+        line-height: 30px;
+    }
+
+    .sidebar-nav li a {
+        display: block;
+        text-decoration: none;
+        color: #343434;
+    }
+
+    .sidebar-nav li a:hover {
+        text-decoration: none;
+        color: #8c8c8c;
+        background: rgba(255,255,255,0.2);
+    }
+
+    .sidebar-nav li a:active,
+    .sidebar-nav li a:focus {
+        text-decoration: none;
+    }
+
+    .inner-nav a{
+        margin-left: 1.5vmax;
+        font-size: 1vmax;
+        /*line-height: -30px;*/
+    }
+
+    .outer-nav a {
+        font-weight: bold;
+    }
+
+    @media(min-width:500px) {
+        #wrapper {
+            padding-left: 0px;
+        }
+
+        #wrapper.toggled {
+            padding-left: 0;
+        }
+
+        #sidebar-wrapper {
+            width: 250px;
+        }
+
+        #wrapper.toggled #sidebar-wrapper {
+            width: 0;
+        }
+
+        #page-content-wrapper {
+            padding: 20px;
+            position: relative;
+        }
+
+        #wrapper.toggled #page-content-wrapper {
+            position: relative;
+            margin-right: 0;
+        }
+    }
+
+
 </style>
 </head>
 <p class="my-name"><a href="index.html">cat mai</a></p>
@@ -97,15 +202,77 @@
         <li><a href="index.html" class="nav-me-link">bio</a></li>
         <li><a href="projects.html" class="nav-me-link me-active">projects</a></li>
         <li><a href="personal.html" class="nav-me-link">personal</a></li>
-        <li><a href="drawings.html" class="nav-me-link">drawings</a></li>
+<!--        <li><a href="drawings.html" class="nav-me-link">drawings</a></li>-->
     </ul>
 </div>
 <br>
 
+<div id="sidebar-wrapper">
+    <ul class="sidebar-nav">
+        <li class="outer-nav">
+            <a href="#math_thesis">Senior thesis</a>
+        </li>
+        <li class="inner-nav">
+            <a href="#mcmc">Markov Monte Carlo</a>
+        </li>
+        <li class="outer-nav">
+            <a href="#social_computing">Social computing</a>
+        </li>
+        <li class="inner-nav">
+            <a href="#automotion">Automotion</a>
+        </li>
+        <li class="inner-nav">
+            <a href="#drug">Drug addiction discourse</a>
+        </li>
+        <li class="inner-nav">
+            <a href="#teamtrees">#TeamTrees</a>
+        </li>
+        <li class="inner-nav">
+            <a href="#stayhome">YouTube during Covid-19</a>
+        </li>
+        <li class="outer-nav">
+            <a href="#science_education">Science education</a>
+        </li>
+        <li class="inner-nav">
+            <a href="#ngsx">Science talk moves</a>
+        </li>
+        <li class="outer-nav">
+            <a href="#other">Other</a>
+        </li>
+        <li class="inner-nav">
+            <a href="#crawler">YouTube crawler</a>
+        </li>
+        <li class="inner-nav">
+            <a href="#bomarzo">3D garden</a>
+        </li>
+
+    </ul>
+</div>
+
 <!--PROJECT-->
 <div class="project-description">
     <section>
+    <!-- MATH THESIS           -->
+        <div id="math_thesis"></div>
+        <h3 class="project_section">
+            <span class="underline--magical">Senior Thesis</span>
+        </h3>
+        <ul>
+            <li>
+                <img src="img/math.JPG" id="mcmc">
+                <div class="status-tag active-tag">Active</div>
+                <h3>Markov chain Monte Carlo</h3>
+                <p>I am working with professor Michael Satz on Markov chain Monte Carlo methods,
+                     specifically in Bayesian data analysis.
+                    <br><br>
+                    <a style="text-decoration: underline" href="https://github.com/catxmai/math-thesis" target="_blank" class="paper_link">[repo] (not too much yet)</a>
+
+                </p>
+
+            </li>
+        </ul>
         <!-- SOCIAL COMPUTING-->
+        <div id="social_computing"></div>
         <h3 class="project_section">
             <br>
             <span class="underline--magical">Social Computing</span>
@@ -113,101 +280,113 @@
         </h3>
         <ul>
             <li>
-                <img src="img/sochiatrist.jpg">
-                <div class="status-tag upcoming-tag">Upcoming</div>
-                <h3>Brown HCI</h3>
-                <p>This summer 2021, I will be working with Dr. Jeff Huang at Brown University with his Brown HCI team.</p>
+                <img src="img/remotion.jpg" id="automotion">
+                <h3>Automotion: Predicting Emotion
+                    and Attention from Smartphone Behavioral Data</h3>
+                <p>During summer 2021, I worked with Dr. Jeff Huang at Brown University with his Brown HCI team.
+                     I mainly worked on Automotion, software-hardware platform for running remote usability testing for mobile devices.
+                     <br><br>
+                    I modified, retrained models to predict users' affect from finger pressure and 6dof motion replay.
+                     I reviewed literature on affect prediction using mobile computing and rewrote the paper for resubmission.</p>
             </li>
 
             <li>
-                <div id="social_computing">
-                    <img src="img/teamtrees.jpg" >
-                    <div class="status-tag active-tag">Active</div>
-                    <h3>#TeamTrees - 20 Millions Tree by 2020</h3>
+                <img src="img/drug_vids.JPG" id="drug">
+                <h3>Investigating Drug Addiction Discourse on YouTube</h3>
+                <p>
+                    by analyzing 166 YouTube videos. We found that YouTubers leverage videos to disclose personal addiction
+                    experiences, provide professional recommendations, and express addiction-related opinions and lifestyles.
+
+                    <b>#StayHome #WithMe: How Do YouTubers Help With COVID-19 Loneliness?</b><br>
+                    <i>Shuo Niu, Ava Bartolome*, Cat Mai*, and Nguyen B. Ha*</i> <br>
+                    CHI '21
+                    <a href="pdfs/stayhome.pdf" target="_blank" class="paper_link">[pdf]</a>
+                    <br><br>
+                </p>
+            </li>
+
+            <li>
+                    <img src="img/teamtrees.jpg" id="teamtrees">
+                    <h3>#TeamTrees: Investigating How YouTubers Participate in a
+                        Social Media Campaign</h3>
                     <p>#TeamTrees is a year-long 2019 initiative that managed to raise $20 million before
-                        2020 to plant 20 million trees. Activism on YouTube takes on many forms, for example, using kill count
-                        in Diablo to donate to the campaign. Using YouTube's metadata, we want to investigate how different
-                        category of content creators participate in a good-cause social media campaign via a case study of #TeamTrees.
-                        </p>
-                </div>
+                        2020 to plant 20 million trees. Using YouTube's metadata, we investigated how different
+                        category of content creators participate in a good-cause social media campaign
+                        via a case study of #TeamTrees.<br><br>
+                        <b>#TeamTrees: Investigating How YouTubers Participate in a Social Media Campaign</b><br>
+                        <i>Shuo Niu, Cat Mai, Katherine G. McKim, and D. Scott McCrickard</i> <br>
+                        CSCW '21
+                        <a href="pdfs/teamtrees.pdf" target="_blank" class="paper_link">[pdf]</a>
+                        <br><br>
+                    </p>
             </li>
 
             <li>
-                <img src="img/stayhome.jpg">
+                <img src="img/stayhome.jpg" id="stayhome">
                 <h3>#StayHome #WithMe: How Do YouTubers Help With COVID-19 Loneliness?</h3>
-                <p>  User-shared videos generate parasocial attachment and virtual connectedness. However, there is limited knowledge
-                    of how creators contributed videos during disasters to provide social provisions as disaster-relief.
+                <p>
                     We used Weiss's loneliness theory to examine how YouTubers provided friend-like, mentor-like,
                     and family-like provisions through videos in different styles during COVID-19.
                     <br><br>
                     I crawled the dataset for the project and automated the data pipeline. The whole lab then participated in
                     ground theory analysis to come up with the provision and video styles specific to this campaign.
                     <br><br>
-                    <a href="index.html#shwm"
-                       style="color: #232323">
-                    <b>#StayHome #WithMe: How Do YouTubers Help With COVID-19 Loneliness?</b><br></a>
-                    <i>Shuo Niu, Ava Bartolome*, Cat Mai*, and Nguyen B. Ha*</i> CHI '21
-                    <br>
-                    <a href="pdfs/stayhome.pdf" target="_blank" class="btn btn-danger btn-sm pubs">PDF</a>
-                    <a href="https://www.researchgate.net/publication/348417143_StayHome_WithMe_How_Do_YouTubers_Help_with_COVID-19_Loneliness"
-                       target="_blank"
-                       class="btn btn-info btn-sm pubs">ResearchGate</a>
+
+                    <b>#StayHome #WithMe: How Do YouTubers Help With COVID-19 Loneliness?</b><br>
+                    <i>Shuo Niu, Ava Bartolome*, Cat Mai*, and Nguyen B. Ha*</i> <br>
+                    CHI '21
+                    <a href="pdfs/stayhome.pdf" target="_blank" class="paper_link">[pdf]</a>
                     <br><br>
                 </p>
             </li>
 
             <li>
-                <img src="img/wordcloud_covid.PNG">
+                <img src="img/wordcloud_covid.PNG" id="ds125">
                 <h3>Emotional Analysis Via Content Creation on YouTube During COVID-19</h3>
-                <p> This is my final project for my class with Nguyen Ha. We were interested in the emotional response
-                    and coping mechanism of content creators on YouTube during COVID-19. We applied the fight-or-flight framework to analyze how content
+                <p> This is my final project for my data science class with Nguyen Ha. We were interested in the emotional response
+                    and coping mechanism of content creators on YouTube during COVID-19.
+
+                    <br><br>We applied the fight-or-flight framework to analyze how content
                     creators could contribute to mental health for audience.
                     Our approach was to analyze the description and hashtags of the video and use Naive Bayes classifier to create a predictive
                     tagging model.
                     <br><br>
-                    <strong>Remark:</strong> I wish our analysis on emotional analysis was stronger and we had dived deeper into the evaluation of our classifier.
-                    Affection and support via YouTube content is explored in depth and more rigorously in our lab's <i>#StayHome #WithMe - A Call for Videos During COVID-19</i> paper.
-                    <br><br>
-                    <a href="pdfs/FinalReport_DS125.pdf" class="btn btn-danger btn-sm pubs" target="_blank">Final report</a>
+                    <a href="pdfs/FinalReport_DS125.pdf" target="_blank" class="paper_link">[final report]</a>
                 </p>
             </li>
         </ul>
         <!-- STEM EDUCATION-->
         <br><br>
+        <div id="science_education"></div>
         <h3 class="project_section">
-            <span class="underline--magical">Learning Sciences</span>
+            <span class="underline--magical">Science Education</span>
         </h3>
         <ul>
             <li>
-                <div id="NGSX">
-                    <img src="img/mber.PNG" >
-                </div>
+                    <img src="img/mber.PNG" id="ngsx">
                     <h3>Classroom Discourse Analysis for Student-driven Conversation</h3>
                     <p>I worked with Dr. Sarah Michaels at the wonderful <a style="text-decoration: underline" href="https://www.ngsx.org/" target="_blank">NGSX Learning Lab</a>
                         to observe and improve science curriculum
                         for underfunded Worcester high schools. We in turn used our field data to improve professional development for K-12 science educators.
                         <br><br>
-                        I was particularly interested in using <a style="text-decoration: underline" href="https://www.researchgate.net/publication/342163333_Classroom_Discourse_Analyzer_CDA_A_Discourse_Analytic_Tool_for_Teachers" target="_blank">
-                            Classroom Discourse Analyzer</a> and building a machine learning model
-                        to understand how different factors like teacher's talk moves, class composition, seating arrangement would
-                        affect discussion equity -- the notion that students deserve to lead classroom discussion and talk time.
                         We looked at utterances and speech patterns of a teacher-student conversation and tried to find patterns of highly productive
                         student-driven discussion.
                         <br><br>
-                        <a href="pdfs/TheOddOneOut.pdf" class="btn btn-danger btn-sm pubs" target="_blank">Poster</a>
+                        <a href="pdfs/TheOddOneOut.pdf" class="paper_link" target="_blank">[poster]</a>
 
                     </p>
 
             </li>
         </ul>
         <!--OTHER -->
-        <br><br>
+        <br>
         <h3 class="project_section">
             <span class="underline--magical">Other</span>
         </h3>
         <ul>
+            <div id="other"></div>
             <li>
-                <img src="img/YoutubeAPI.jpg">
+                <img src="img/YoutubeAPI.jpg" id="crawler">
                 <div class="status-tag maintaining-tag">Maintaining</div>
                 <h3>YouTube Scraper and Decoder Python Package</h3>
                 <p>
@@ -216,24 +395,24 @@
                     After I'm done with documentation and unit test, we will be ready to release the source code.
                     <br><br>
                     <a href="https://pypi.org/project/clarku-youtube-crawler/"
-                       class="btn btn-info btn-sm pubs" target="_blank">Stable release (limited docs)</a>
+                       class="paper_link" target="_blank">[stable release (limited docs)]</a>
                 </p>
             </li>
 
             <li>
-                <img src="img/bomarzo.PNG">
+                <img src="img/bomarzo.PNG" id="bomarzo">
                 <h3>Geovisualization of Garden of Bomarzo</h3>
-                <p>I used Agisoft Metashape to render 3D models based on photos from Garden of Bomarzo (Italy). During this
-                    summer project, Dr. John Garton and I were building prototypes locally and developing proof of concept for the multi-institution
-                    conservation and reconstruction project.
+                <p> During summer 2019,
+                    Dr. John Garton and I were building prototypes locally and developing proof of concept of a
+                    virtual garden visit in efforts to preserve the historical site.
                     <br><br>
-                    My early attempts at processing the model of the statues helped Dr. Garton’s colleague to secure a
+                    I used Agisoft Metashape to render 3D models based on photos from Garden of Bomarzo. My early attempts at processing the model of the statues helped Dr. Garton’s colleague to secure a
                     national Futures grant and helped Dr. Garton to present the project to grant boards.
                     <br><br>
                     <a href="bomarzo.html"
-                       class="btn btn-info btn-sm pubs"> Project images</a>
+                       class="paper_link"> [demo]</a>
                     <a href="pdfs/BomarzoProposal.pdf"
-                       class="btn btn-danger btn-sm pubs"> Project proposal</a>
+                       class="paper_link">[proposal]</a>
                 </p>
             </li>
         </ul>
@@ -246,7 +425,7 @@
 
 <br><br>
 
-
+<footer class="footer">©cat mai - last updated: oct 2021</footer>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
 <script>hljs.initHighlightingOnLoad();</script>
 
