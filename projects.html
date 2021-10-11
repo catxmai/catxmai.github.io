@@ -128,7 +128,7 @@
     .sidebar-nav {
         position: absolute;
         top: 0;
-        width: 75%;!important;
+        width: 100%;!important;
         margin: 0;
         padding: 0;
         list-style: none;
@@ -158,21 +158,22 @@
 
     .inner-nav a{
         margin-left: 1vmax;
-        font-size: 1vmax;
+        font-size: .8vmax;
         /*line-height: -30px;*/
     }
 
     .outer-nav a {
         font-weight: bold;
+        font-size: 1.2vmax; !important;
     }
 
-    @media(min-width:750px) {
+    @media(min-width:500px) {
         #wrapper {
             padding-left: 0px;
         }
 
         #sidebar-wrapper {
-            width: 250px;
+            width: 10rem;
         }
 
         #wrapper.toggled #sidebar-wrapper {
