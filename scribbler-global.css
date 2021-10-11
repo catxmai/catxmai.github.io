@@ -60,12 +60,12 @@ html, body {
   font-family: "Open Sans", sans-serif;
   font-weight: 800;
   font-size: xx-large;
-  color: var(--light-purple);
+  color: #292828;
   margin-bottom: -.5vmax;
 }
 
 .my-name a:hover{
-  color: var(--light-purple);
+  color: #4A4A4A;
 }
 
 .nav-bar-me li a {
