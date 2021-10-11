@@ -1,6 +1,6 @@
 /* css variables*/
 @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;600&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
 @import url("https://fonts.googleapis.com/css?family=Nunito+Sans:300,400,600,700,800,900&display=swap");
 
@@ -59,7 +59,7 @@ html, body {
   justify-content: center;
   font-family: "Open Sans", sans-serif;
   font-weight: 800;
-  font-size: xx-large;
+  font-size: 1.6em;
   color: #292828;
   margin-bottom: -.5vmax;
 }
@@ -72,7 +72,7 @@ html, body {
   display: block;
   text-align: center;
   margin-top: 1vmax;
-  padding: .5vmax .6vmax;
+  padding: .5em .6em;
   text-decoration: none;
   color: #a49e9e;
 }
@@ -88,7 +88,7 @@ html, body {
 .nav-bar-me li a.nav-me-link {
   font-family: "Open Sans",sans-serif;
   font-weight: 700;
-  font-size: 1.3vmax;
+  font-size: 1.2em;
 }
 
 .underline--magical {
