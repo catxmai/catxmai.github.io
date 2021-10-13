@@ -1,157 +1,157 @@
-<!doctype html>
-<html>
-<head>
-    <meta charset="utf-8">
-    <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Cat Mai</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/railscasts.min.css">
-    <link rel="stylesheet" href="scribbler-global.css">
-    <link rel="stylesheet" href="scribbler-landing.css">
-    <link rel="icon" href="icons/cat_icon.png">
+<!--<!doctype html>-->
+<!--<html>-->
+<!--<head>-->
+<!--    <meta charset="utf-8">-->
+<!--    <meta name="description" content="">-->
+<!--    <meta name="viewport" content="width=device-width, initial-scale=1">-->
+<!--    <title>Cat Mai</title>-->
+<!--    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">-->
+<!--    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">-->
+<!--    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/railscasts.min.css">-->
+<!--    <link rel="stylesheet" href="scribbler-global.css">-->
+<!--    <link rel="stylesheet" href="scribbler-landing.css">-->
+<!--    <link rel="icon" href="icons/cat_icon.png">-->
 
-</head>
+<!--</head>-->
 
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<style>
+<!--<meta name="viewport" content="width=device-width, initial-scale=1">-->
+<!--<style>-->
 
-    active{
-        background-color: #4CAF50;
-        color: white;
-    }
+<!--    active{-->
+<!--        background-color: #4CAF50;-->
+<!--        color: white;-->
+<!--    }-->
 
-    .personal_section {
-        margin-left: -28px;
-    }
+<!--    .personal_section {-->
+<!--        margin-left: -28px;-->
+<!--    }-->
 
-    .personal-description li a {
-        text-decoration: underline;
-    }
+<!--    .personal-description li a {-->
+<!--        text-decoration: underline;-->
+<!--    }-->
 
-    .personal-description li img {
-        float: left;
-        margin: 0 15px 0 0;
-        display: table-cell;
-        vertical-align: middle;
-        width: 35%;
-        padding-right: 1em;
-    }
+<!--    .personal-description li img {-->
+<!--        float: left;-->
+<!--        margin: 0 15px 0 0;-->
+<!--        display: table-cell;-->
+<!--        vertical-align: middle;-->
+<!--        width: 30%;-->
+<!--        padding-right: 1.3em;-->
+<!--    }-->
 
-    .personal-description li p {
-        font-family: 'Open Sans',sans-serif;
-        font-size: .8em;
-        line-height: 1.3em;
-        font-weight: 400;
-        text-align: justify;
-        display: table-cell;
-        color: black;
-    }
+<!--    .personal-description li p {-->
+<!--        font-family: 'Open Sans',sans-serif;-->
+<!--        font-size: .9em;-->
+<!--        line-height: 1.5em;-->
+<!--        font-weight: 400;-->
+<!--        text-align: justify;-->
+<!--        display: table-cell;-->
+<!--        color: black;-->
+<!--    }-->
 
-    .personal-description li {
-        padding: 10px;
-        overflow: auto;
-        margin-left: -80px;
-        margin-right: -100px;
-        border-bottom: 1px solid #ccc;
-        border-collapse: collapse;
-        margin-bottom: 10px;
-    }
+<!--    .personal-description li {-->
+<!--        padding: 10px;-->
+<!--        overflow: auto;-->
+<!--        margin-left: -80px;-->
+<!--        margin-right: -100px;-->
+<!--        border-bottom: 1px solid #ccc;-->
+<!--        border-collapse: collapse;-->
+<!--        margin-bottom: 10px;-->
+<!--    }-->
 
-    .personal-description li h3 {
-        margin-top: -7px;
-        font-family: "Open Sans",sans-serif;
-        font-weight: 600;
-        font-size: 1.3em;
-        color: #292828;
-    }
+<!--    .personal-description li h3 {-->
+<!--        margin-top: -7px;-->
+<!--        font-family: "Open Sans",sans-serif;-->
+<!--        font-weight: 600;-->
+<!--        font-size: 1.8em;-->
+<!--        color: #292828;-->
+<!--    }-->
 
-    h1.personal_section{
-        font-weight: 600;
-        font-size: 1.6em;
-    }
+<!--    h1.personal_section{-->
+<!--        font-weight: 600;-->
+<!--        font-size: 1.8em;-->
+<!--    }-->
 
-    h3.personal_section {
-        font-weight: 600;
-        font-size: 1.6em;
-    }
+<!--    h3.personal_section {-->
+<!--        font-weight: 600;-->
+<!--        font-size:1.8em;-->
+<!--    }-->
 
-</style>
-</head>
-<p class="my-name"><a href="index.html">cat mai</a></p>
-<body>
-<div class="nav-bar-me">
-    <ul>
-        <li><a href="index.html" class="nav-me-link">bio</a></li>
-        <li><a href="projects.html" class="nav-me-link">projects</a></li>
-        <li><a href="personal.html" class="nav-me-link me-active">personal</a></li>
-<!--        <li><a href="drawings.html" class="nav-me-link">drawings</a></li>-->
-    </ul>
-</div>
-<br>
+<!--</style>-->
+<!--</head>-->
+<!--<p class="my-name"><a href="index.html">cat mai</a></p>-->
+<!--<body>-->
+<!--<div class="nav-bar-me">-->
+<!--    <ul>-->
+<!--        <li><a href="index.html" class="nav-me-link">bio</a></li>-->
+<!--        <li><a href="projects.html" class="nav-me-link">projects</a></li>-->
+<!--        <li><a href="personal.html" class="nav-me-link me-active">personal</a></li>-->
+<!--&lt;!&ndash;        <li><a href="drawings.html" class="nav-me-link">drawings</a></li>&ndash;&gt;-->
+<!--    </ul>-->
+<!--</div>-->
+<!--<br>-->
 
-<body>
+<!--<body>-->
 
-<!--PROJECT-->
-<div class="personal-description">
-    <section>
-        <!-- GO/WEIQI-->
-        <h3 class="personal_section">
-            <br>
-            <span class="underline--magical">Personal</span>
+<!--&lt;!&ndash;PROJECT&ndash;&gt;-->
+<!--<div class="personal-description">-->
+<!--    <section>-->
+<!--        &lt;!&ndash; GO/WEIQI&ndash;&gt;-->
+<!--        <h3 class="personal_section">-->
 <!--            <br>-->
-        </h3>
-        <ul>
-            <li>
-                <img src="img/go_congress2019.jpg">
-                <h3>Go/Weiqi</h3>
-                <p>Go is my biggest hobby! I play Go competitively at regional, sometimes national, tournaments.
-                    I managed to win the <a href="https://www.usgo.org/tournaments/crosstab/band-matrix/181" target="_blank" class="paper_link">
-                        US Open 6k division</a>
-                    in 2018! But it sounds more impressive than it actually is.
-                    <br><br>
-                    In summer 2020, I helped organizing the US' very first <a href="https://www.gocongress.org" target="_blank">
-                        e-Go Congress</a> and co-directed the US Open.
-                    We had around 1000 attendees and I'm still very proud of it :)
-                    <br><br>
-                    ←-: <i>Me and my Go partner at Go Congress 2019.</i>
-                </p>
-            </li>
-
+<!--            <span class="underline&#45;&#45;magical">Personal</span>-->
+<!--&lt;!&ndash;            <br>&ndash;&gt;-->
+<!--        </h3>-->
+<!--        <ul>-->
 <!--            <li>-->
-<!--                <img src="img/stopforwarding.jpg" >-->
-<!--                <h3>Recreational Coding</h3>-->
-<!--                <p>-->
-<!--                    1. I've been working on my Go bot using a tutorial. Next step is to make it to use community-trained weights.-->
+<!--                <img src="img/go_congress2019.jpg">-->
+<!--                <h3>Go/Weiqi</h3>-->
+<!--                <p>Go is my biggest hobby! I play Go competitively at regional, sometimes national, tournaments.-->
+<!--                    I managed to win the <a href="https://www.usgo.org/tournaments/crosstab/band-matrix/181" target="_blank" class="paper_link">-->
+<!--                        US Open 6k division</a>-->
+<!--                    in 2018! But it sounds more impressive than it actually is.-->
 <!--                    <br><br>-->
-<!--                    2. I'm inspired by <a href="https://www.inc.com/geoffrey-james/401-reasons-your-email-is-spam.html" target="_blank"> this article</a>-->
-<!--                     and the song <a href="https://www.youtube.com/watch?v=KCSA7kKNu2Y">Stop Forwarding That Crap to Me</a> by Weird Al,-->
-<!--                     and have been thinking about writing a url shortenter/email-->
-<!--                    transformer to make your email as spammy-sounding and as suspicious as possible. I know it serves no purpose, but the idea greatly inspires me.-->
+<!--                    In summer 2020, I helped organizing the US' very first <a href="https://www.gocongress.org" target="_blank">-->
+<!--                        e-Go Congress</a> and co-directed the US Open.-->
+<!--                    We had around 1000 attendees and I'm still very proud of it :)-->
+<!--                    <br><br>-->
+<!--                    ←-: <i>Me and my Go partner at Go Congress 2019.</i>-->
 <!--                </p>-->
 <!--            </li>-->
 
-            <li>
-                <img src="img/apple.jpg" >
-                <h3>Apple tasting</h3>
-                <p>
-                    My apple tasting journey! <a href="https://www.notion.so/catmai/5a88b4e66bf54ea1b6ad2a86b0e47d40?v=eb84568f98d94acfb9b58b56c086f8b8" target="_blank">
-                        My records</a>
-                </p>
-            </li>
-        </ul>
+<!--&lt;!&ndash;            <li>&ndash;&gt;-->
+<!--&lt;!&ndash;                <img src="img/stopforwarding.jpg" >&ndash;&gt;-->
+<!--&lt;!&ndash;                <h3>Recreational Coding</h3>&ndash;&gt;-->
+<!--&lt;!&ndash;                <p>&ndash;&gt;-->
+<!--&lt;!&ndash;                    1. I've been working on my Go bot using a tutorial. Next step is to make it to use community-trained weights.&ndash;&gt;-->
+<!--&lt;!&ndash;                    <br><br>&ndash;&gt;-->
+<!--&lt;!&ndash;                    2. I'm inspired by <a href="https://www.inc.com/geoffrey-james/401-reasons-your-email-is-spam.html" target="_blank"> this article</a>&ndash;&gt;-->
+<!--&lt;!&ndash;                     and the song <a href="https://www.youtube.com/watch?v=KCSA7kKNu2Y">Stop Forwarding That Crap to Me</a> by Weird Al,&ndash;&gt;-->
+<!--&lt;!&ndash;                     and have been thinking about writing a url shortenter/email&ndash;&gt;-->
+<!--&lt;!&ndash;                    transformer to make your email as spammy-sounding and as suspicious as possible. I know it serves no purpose, but the idea greatly inspires me.&ndash;&gt;-->
+<!--&lt;!&ndash;                </p>&ndash;&gt;-->
+<!--&lt;!&ndash;            </li>&ndash;&gt;-->
+
+<!--            <li>-->
+<!--                <img src="img/apple.jpg" >-->
+<!--                <h3>Apple tasting</h3>-->
+<!--                <p>-->
+<!--                    My apple tasting journey! <a href="https://www.notion.so/catmai/5a88b4e66bf54ea1b6ad2a86b0e47d40?v=eb84568f98d94acfb9b58b56c086f8b8" target="_blank">-->
+<!--                        My records</a>-->
+<!--                </p>-->
+<!--            </li>-->
+<!--        </ul>-->
 
 
-    </section>
-</div>
+<!--    </section>-->
+<!--</div>-->
 
 
-<br><br>
+<!--<br><br>-->
 
-<footer class="footer">©cat mai - last updated: oct 2021</footer>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
-<script>hljs.initHighlightingOnLoad();</script>
+<!--<footer class="footer">©cat mai - last updated: oct 2021</footer>-->
+<!--<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>-->
+<!--<script>hljs.initHighlightingOnLoad();</script>-->
 
-</body>
-</html>
+<!--</body>-->
+<!--</html>-->
