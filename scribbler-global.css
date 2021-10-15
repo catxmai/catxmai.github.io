@@ -57,16 +57,16 @@ html, body {
 .my-name, .my-name a {
   display: flex;
   justify-content: center;
-  font-family: "Open Sans", sans-serif;
   font-weight: 800;
   font-size: 1.5em;
   color: #292828;
-  margin-bottom: -.5vmax;
+  margin-bottom: -.2em;
 }
 
 .my-name a:hover{
   color: #4A4A4A;
 }
+
 
 .nav-bar-me li a {
   display: block;
