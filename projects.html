@@ -223,12 +223,6 @@
             <a href="#stayhome">YouTube during Covid-19</a>
         </li>
         <li class="outer-nav">
-            <a href="#science_education">Science education</a>
-        </li>
-        <li class="inner-nav">
-            <a href="#ngsx">Science talk moves</a>
-        </li>
-        <li class="outer-nav">
             <a href="#other">Other</a>
         </li>
         <li class="inner-nav">
@@ -236,6 +230,9 @@
         </li>
         <li class="inner-nav">
             <a href="#bomarzo">3D garden</a>
+        </li>
+        <li class="inner-nav">
+            <a href="#ngsx">Science talk moves</a>
         </li>
 
     </ul>
@@ -255,7 +252,9 @@
                 <div class="status-tag active-tag">Active</div>
                 <h3>Markov chain Monte Carlo</h3>
                 <p>I am working with professor Michael Satz on Markov chain Monte Carlo methods,
-                     specifically in Bayesian data analysis.
+                     specifically in Bayesian data analysis. We look at different Monte Carlo sampling methods,
+                    such as importance sampling and Hasting-Metropolis algorithm, to see how well they approximate
+                    the posterior distribution.
                     <br><br>
                     <a style="text-decoration: underline" href="https://github.com/catxmai/math-thesis" target="_blank" class="paper_link">[repo] (not too much yet)</a>
 
@@ -276,10 +275,18 @@
                 <h3>Automotion: Predicting Emotion
                     and Attention from Smartphone Behavioral Data</h3>
                 <p>During summer 2021, I worked with Dr. Jeff Huang at Brown University with his HCI lab.
-                     I worked on Automotion, software-hardware platform for running remote usability testing for mobile devices.
+                     I worked on <a href="https://remotion.cs.brown.edu/" target="_blank" style="text-decoration: underline">Automotion</a>, software-hardware platform for running remote usability testing for mobile devices.
                      <br><br>
                     I modified, retrained models to predict users' affect from finger pressure and 6dof motion replay.
-                     I reviewed literature on affect prediction using mobile computing and rewrote the paper for resubmission.</p>
+                     I reviewed literature on affect prediction using mobile computing and rewrote the paper for resubmission.
+                    <br><br>
+                    <span class="paper_project">
+                            <b>Predicting Emotion and Attention from Smartphone Behavioral Data</b><br>
+                            Dinithi Silva-Sassaman, Cat Mai, Jing Qian, Jeff Huang<br>
+                            Clark Fall Fest '21 (poster) <a href="pdfs/automotionposter_oct2021.pdf" target="_blank" class="paper_link">[pdf]</a>
+                    </span>
+                    <br><br>
+                </p>
             </li>
 
             <li>
@@ -293,7 +300,7 @@
                     <br><br>
                     <span class="paper_project">
                         <b>Investigating Drug Addiction Discourse on YouTube</b><br>
-                        Katherine McKim, Cat Mai, Danielle Hess, and Shuo Niu<br>
+                        Katherine McKim, Cat Mai, Danielle Hess, Shuo Niu<br>
                         CSCW '21 (poster) <a href="pdfs/drug2021.pdf" target="_blank" class="paper_link">[pdf]</a>
                     </span>
                     <br><br>
@@ -306,15 +313,16 @@
                     Social Media Campaign</h3>
                 <p>#TeamTrees is a year-long 2019 initiative that managed to raise $20 million before
                     2020 to plant 20 million trees. Using YouTube's metadata, we investigated how different
-                    category of content creators participate in a good-cause social media campaign
-                    via a case study of #TeamTrees.<br><br>
-                    I crawled the data set and coded the video-tagging interface. I watched and
-                    tagged the videos with other authors, did the analysis, and
+                    category of content creators participated in #TeamTrees.<br><br>
+                    I crawled the data set and created the video-tagging interface. I researched #TeamTrees
+                    origination and impact, as well as literature on civic engagement and movement building.
+                     I watched and
+                    tagged more than 500 videos and discussed them with other authors. I ran the analysis and
                     wrote parts of the paper.
                     <br><br>
                     <span class="paper_project">
                         <b>#TeamTrees: Investigating How YouTubers Participate in a Social Media Campaign</b><br>
-                        Shuo Niu, Cat Mai, Katherine G. McKim, and D. Scott McCrickard <br>
+                        Shuo Niu, Cat Mai, Katherine G. McKim, D. Scott McCrickard <br>
                         CSCW '21
                         <a href="pdfs/teamtrees.pdf" target="_blank" class="paper_link">[pdf]</a>
                     </span>
@@ -336,7 +344,7 @@
                     <br><br>
                     <span class="paper_project">
                         <b>#StayHome #WithMe: How Do YouTubers Help With COVID-19 Loneliness?</b><br>
-                        Shuo Niu, Ava Bartolome*, Cat Mai*, and Nguyen B. Ha* <br>
+                        Shuo Niu, Ava Bartolome*, Cat Mai*, Nguyen B. Ha* <br>
                         CHI '21
                         <a href="pdfs/stayhome.pdf" target="_blank" class="paper_link">[pdf]</a>
                     </span>
@@ -359,29 +367,7 @@
                 </p>
             </li>
         </ul>
-        <!-- STEM EDUCATION-->
-        <br><br>
-        <div id="science_education"></div>
-        <h3 class="project_section">
-            <span class="underline--magical">Science Education</span>
-        </h3>
-        <ul>
-            <li>
-                    <img src="img/mber.PNG" id="ngsx">
-                    <h3>Classroom Discourse Analysis for Student-driven Conversation</h3>
-                    <p>I worked with Dr. Sarah Michaels at the wonderful <a style="text-decoration: underline" href="https://www.ngsx.org/" target="_blank">NGSX Learning Lab</a>
-                        to observe and improve science curriculum
-                        for underfunded Worcester high schools. We in turn used our field data to improve professional development for K-12 science educators.
-                        <br><br>
-                        We looked at utterances and speech patterns of a teacher-student conversation and tried to find patterns of highly productive
-                        student-driven discussion.
-                        <br><br>
-                        <a href="pdfs/TheOddOneOut.pdf" class="paper_link" target="_blank">[poster]</a>
 
-                    </p>
-
-            </li>
-        </ul>
         <!--OTHER -->
         <br>
         <h3 class="project_section">
@@ -395,7 +381,7 @@
                 <h3>YouTube Scraper and Decoder Python Package</h3>
                 <p>
                     Dr. Shuo Niu and I wrote the beginner-friendly YouTube crawler pipeline and a .json decoder specifically for retrieved
-                    file from YouTube API request. I packaged it and am currently the lead developer. My lab has been using this package for several projects.
+                    file from YouTube API request. I packaged it and am currently the lead maintainer. My lab has been using this package for several projects.
 
                     <br><br>
                     <a href="https://pypi.org/project/clarku-youtube-crawler/"
@@ -418,6 +404,22 @@
                     <a href="pdfs/BomarzoProposal.pdf"
                        class="paper_link">[proposal]</a>
                 </p>
+            </li>
+
+            <li>
+                <img src="img/mber.PNG" id="ngsx">
+                <h3>Classroom Discourse Analysis for Student-driven Conversation</h3>
+                <p>I worked with Dr. Sarah Michaels at the wonderful <a style="text-decoration: underline" href="https://www.ngsx.org/" target="_blank">NGSX Learning Lab</a>
+                    to observe and improve science curriculum
+                    for underfunded Worcester high schools. We in turn used our field data to improve professional development for K-12 science educators.
+                    <br><br>
+                    We looked at utterances and speech patterns of a teacher-student conversation and tried to find patterns of highly productive
+                    student-driven discussion.
+                    <br><br>
+                    <a href="pdfs/TheOddOneOut.pdf" class="paper_link" target="_blank">[poster]</a>
+
+                </p>
+
             </li>
         </ul>
     </section>
