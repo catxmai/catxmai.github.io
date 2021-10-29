@@ -7,14 +7,15 @@
       <title>Cat Mai</title>
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
       <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
       <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
       <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
       <link href="https://fontawesome.com/css/fontawesome.css" rel="stylesheet">
       <link href="https://fontawesome.com/css/brands.css" rel="stylesheet">
       <link href="https://fontawesome.com/css/solid.css" rel="stylesheet">
 <!--      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/railscasts.min.css">-->
-      <link rel="stylesheet" href="scribbler-global.css">
-      <link rel="stylesheet" href="scribbler-landing.css">
+      <link rel="stylesheet" href="global.css">
+      <link rel="stylesheet" href="landing.css">
       <link rel="icon" href="icons/cat_icon.png">
 
   </head>
@@ -30,7 +31,7 @@
       color: #797575;
     }
 
-    .fa,.fab,.far{
+    .fa,.fab,.far, .ai{
       color: black;
       font-size: 1.2em;
     }
@@ -97,9 +98,9 @@
       </ul>
   </div>
   <br>
-<!--  <div class="hero">-->
+<!--  <div class="main">-->
 <!--  </div>-->
-<!--  <div class="hero__terminal">-->
+<!--  <div class="main__terminal">-->
 <!--    <pre>-->
 <!--      <code class="shell-session demo"><span class="intro-code">(cmai) $ tl;dr</span>-->
 <!--                                      </code>-->
@@ -113,7 +114,7 @@
         <a href="https://github.com/catxmai"  target="_blank" rel="noopener noreferrer"
            style="display: inline-block"class="fab fa-github"></a>
       <a href="https://scholar.google.com/citations?user=Ahem6FwAAAAJ" target="_blank" rel="noopener noreferrer"
-         style="display: inline-block" class="fas fa-graduation-cap"></a>
+         style="display: inline-block" class="ai ai-google-scholar"></a>
         <a href="https://twitter.com/CatXMai"  target="_blank" rel="noopener noreferrer"
            style="display: inline-block"class="fab fa-twitter"></a>
         <a href="https://keybase.io/catxmai" target="_blank" rel="noopener noreferrer"
@@ -124,12 +125,12 @@
          target="_blank" rel="noopener noreferrer">CV</a> <span style="font-size:1em !important;">[ver: oct 2021]</span><br>
     </div>
 
-    <div class="hero__description col-lg-9 col-md-9 col-sm-9 intro">
+    <div class="main__description col-lg-9 col-md-9 col-sm-9 intro">
       Hi! I'm a senior studying Mathematics and Computer science at Clark University. I'm applying
       for PhD programs in Computer science for Fall 2022 entry.
       <br><br>
       I am working with Prof. Michael Satz on
-      <a href="projects.html#math_thesis"><b class="keyword">Markov chain Monte Carlo</b></a>, specifically
+      <a href="projects.html#mcmc"><b class="keyword">Markov chain Monte Carlo</b></a>, specifically
       in building models through Bayesian data analysis. This will be my senior thesis.
       <a href="https://github.com/catxmai/math-thesis" target="_blank" class="link" style="color: black;text-decoration: underline" >[repo] (not too much yet)</a>.
       <br>
@@ -138,21 +139,22 @@
       using phone's motion replay and finger pressure to predict emotion and attention levels.
       <br><br>
       Previously, I worked on
-      <a href="projects.html#social_computing"><b class="keyword">Social media analysis</b></a>, specifically
-      <a href="projects.html#social_computing"><b class="keyword">through video sharing</b></a> with Prof. Shuo Niu.
-      We look at YouTube-based social media campaigns
-      and use human evaluation data to investigate participation patterns.
-      These patterns help us understand how video-sharing platforms could support mental health and event collaboration.
+      <a href="projects.html#social_computing"><b class="keyword">Social media analysis</b></a>
+        and <a href="projects.html#social_computing"><b class="keyword">online civic engagement</b></a>, specifically
+      through video sharing with Prof. Shuo Niu.
+      We look at YouTube-based social media campaigns and special support groups
+       to investigate participation patterns.
+      These patterns help us understand how video-sharing platforms could support event collaboration.
 
       <br><br><br>
     </div>
   </div>
   <br>
-    <div class="hero__description">
+    <div class="main__description">
 
     </div>
     <p style="font-size: .9em">* = equal contribution</p>
-    <div class="hero__description">
+    <div class="main__description">
       <span class="paper-class">Conference papers</span>
       <br>
       <div class="paper_list">
@@ -203,7 +205,7 @@
       </figure>
     </div>
 
-    <div class="hero__description col-lg-9 col-md-9 col-sm-9 intro">
+    <div class="main__description col-lg-9 col-md-9 col-sm-9 intro">
       <b>Go is my biggest hobby!</b>
 
       <br> I play Go competitively at regional, sometimes national, tournaments.
@@ -224,7 +226,7 @@
       <img src="img/apple.jpg" style="width: 100%">
     </div>
 
-    <div class="hero__description col-lg-9 col-md-9 col-sm-9 intro">
+    <div class="main__description col-lg-9 col-md-9 col-sm-9 intro">
       I eat a lot of apples on a regular basis.
         <a href="https://www.notion.so/catmai/5a88b4e66bf54ea1b6ad2a86b0e47d40?v=eb84568f98d94acfb9b58b56c086f8b8" target="_blank"style="color: #e140f3;">Some varieties</a>.
     </div>
@@ -239,6 +241,6 @@
     <footer class="footer">©cat mai - last updated: oct 2021</footer>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="scribbler.js"></script>
+<!--    <script src="scribbler.js"></script>-->
   </body>
 </html>
