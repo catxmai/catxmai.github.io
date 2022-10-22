@@ -220,7 +220,7 @@ table td:first-child {
   text-align: center;
   color: black;
   font-family: "Open Sans", sans-serif;
-  font-size: .8vmax;
+  font-size: .9em;
 }
 
 @keyframes fadeUp {
@@ -232,5 +232,3 @@ table td:first-child {
     transform: translate3d(0,0,0);
   }
 }
-
-
