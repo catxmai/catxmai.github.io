@@ -1,7 +1,7 @@
 
 :root {
 	--background-color: #d3c4b8;
-	--text-color: #666;
+	--text-color: #242222;
 	--title-color: rgb(106, 45, 204);
 }
 
@@ -28,7 +28,7 @@ ul {
 
 body {
 	background-color: var(--background-color);
-	color: #000;
+	color: var(--text-color);
 	font-family: 'Open Sans', sans-serif;
 	font-size: 16px;
 	font-weight: 300;
