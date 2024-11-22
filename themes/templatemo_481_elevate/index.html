@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Elevate Bootstrap 4.0 Theme</title>
+<!--
+Elevate
+http://www.templatemo.com/cm-481-elevate
+-->
+    <!-- load stylesheets -->
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:300,400">   <!-- Google web font "Open Sans" -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">                                      <!-- Bootstrap style -->
+    <link rel="stylesheet" href="css/templatemo-style.css">                                   <!-- Templatemo style -->
+
+      </head>
+
+      <body>
+        <div class="container">
+
+            <div class="cm-sidebar">
+                <img src="img/menu-top.jpg" alt="Menu top image" class="img-fluid cm-sidebar-image">
+                <nav class="cm-main-nav">
+                    <ul>
+                        <li class="cm-nav-item"><a href="#home" class="cm-nav-item-link">Home</a></li>
+                        <li class="cm-nav-item"><a href="#about" class="cm-nav-item-link">About</a></li>
+                        <li class="cm-nav-item"><a href="#ideas" class="cm-nav-item-link">Ideas</a></li>
+                        <li class="cm-nav-item"><a href="#contact" class="cm-nav-item-link">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+            
+            <div class="cm-main-content">
+                
+                <section id="home" class="cm-content-box cm-banner">
+                    <div class="pad cm-banner-inner">
+                        <h1 class="cm-banner-title">Cat Mai</h1>
+                        <p class="cm-banner-text">
+                            Hi! I am a Computer Science PhD student at NYU Tandon, advised by <a href="https://damonmccoy.com/" target="_blank"><b class="link">Damon McCoy</b></a>.
+                            My current research interests are in user privacy and social media. 
+                             
+                            <br><br>
+                        
+                            During my undergrad, I worked on social media analysis and parasocial relationship on YouTube 
+                            with Prof. Shuo Niu.
+                      
+                            I also worked with Prof. Jeff Huang (Brown HCI) on
+                            <a href="https://remotion.cs.brown.edu/" target="_blank"><b class="link">Automotion</b></a>,
+                            using phone's motion replay and finger pressure to predict emotion and attention levels.
+                        </p>    
+                    </div>                    
+                </section>
+
+                <section>
+                    <div class="cm-content-box">
+                        
+                        <div class="pad cm-team-description-container">
+                            <h2 class="cm-section-title">Our Team</h2>
+                            <p class="cm-section-description">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque vel nisi pharetra nibh varius pharetra ac sagittis nisi. Etiam pharetra vestibulum hendrerit.</p>
+                            <p class="cm-section-description">
+                                Donec ex libero, fringilla vitae purus sit amet, rhoncus pharetra lorem. Pellentesque id sem id lacus ultricies vehicula. Aliquam rutrum mi non.
+                                Donec ex libero, fringilla vitae purus sit amet, rhoncus pharetra lorem. Pellentesque id sem id lacus ultricies vehicula. Aliquam rutrum mi non.
+                                Donec ex libero, fringilla vitae purus sit amet, rhoncus pharetra lorem. Pellentesque id sem id lacus ultricies vehicula. Aliquam rutrum mi non.
+                                Donec ex libero, fringilla vitae purus sit amet, rhoncus pharetra lorem. Pellentesque id sem id lacus ultricies vehicula. Aliquam rutrum mi non.
+                                Donec ex libero, fringilla vitae purus sit amet, rhoncus pharetra lorem. Pellentesque id sem id lacus ultricies vehicula. Aliquam rutrum mi non.
+                            </p>    
+                        </div>                  
+                        
+
+                    </div>
+                    
+                </section>
+
+                <section class="cm-content-box">
+                    <img src="img/contact.jpg" alt="Contact image" class="img-fluid">
+
+                    <div id="contact" class="pad">
+                        <h2 class="cm-section-title">Contact Us</h2>
+                        
+                    </div>
+                    
+                </section>  
+
+                <footer class="cm-footer">
+                    <p class="text-xs-center">Copyright &copy; 2016 Company Name</p>
+                </footer>
+
+            </div>
+             
+        </div>
+        
+        <!-- load JS files -->
+        
+        <script src="js/jquery-1.11.3.min.js"></script>             <!-- jQuery (https://jquery.com/download/) -->
+        <script src="js/bootstrap.min.js"></script>                 <!-- Bootstrap (http://v4-alpha.getbootstrap.com/getting-started/download/) -->
+        <script src="js/jquery.singlePageNav.min.js"></script>      <!-- Single Page Nav (https://github.com/ChrisWojcik/single-page-nav) -->
+        
+        <!-- Templatemo scripts -->
+        <script>                      
+    
+        $(document).ready(function(){
+
+            // Single page nav
+            if($(window).width() <= 1139) {
+                $('.cm-main-nav').singlePageNav({
+                    'currentClass' : "active",
+                    offset : 100
+                });
+            } else {
+                $('.cm-main-nav').singlePageNav({
+                    'currentClass' : "active",
+                    offset : 80
+                });
+            }
+
+            // Handle nav offset upon window resize
+            $(window).resize(function(){
+                if($(window).width() <= 1139) {
+                    $('.cm-main-nav').singlePageNav({
+                        'currentClass' : "active",
+                        offset : 100
+                    });
+                } else {
+                    $('.cm-main-nav').singlePageNav({
+                        'currentClass' : "active",
+                        offset : 80
+                    });
+                }
+            });
+    
+
+        });
+    
+        </script>             
+
+    </body>
+    </html>

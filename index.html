@@ -1,210 +1,213 @@
-<!doctype html>
-<html>
-  <head>
-      <meta charset="utf-8">
-      <meta name="description" content="">
-      <meta name="viewport" content="width=device-width, initial-scale=1">
-      <title>Cat Mai</title>
-      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-      <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
-      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
-      <link href="https://fontawesome.com/css/fontawesome.css" rel="stylesheet">
-      <link href="https://fontawesome.com/css/brands.css" rel="stylesheet">
-      <link href="https://fontawesome.com/css/solid.css" rel="stylesheet">
-<!--      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/railscasts.min.css">-->
-      <link rel="stylesheet" href="global.css">
-      <link rel="stylesheet" href="landing.css">
-      <link rel="icon" href="icons/cat_icon.png">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="icons/cat_icon.png">
+    <title>Cat Mai</title>
 
-  </head>
+    <!-- load stylesheets -->
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:300,400">   <!-- Google web font "Open Sans" -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">                                      <!-- Bootstrap style -->
+    <link rel="stylesheet" href="css/my-style.css">                                           <!-- CSS style -->
 
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <style>
+      </head>
 
-    body {
-      font-family: 'Open Sans', sans-serif;
-      font-weight: 300;
-    }
-    .fa:hover,.fab:hover,.far:hover {
-      color: #797575;
-    }
+      <body>
+        <div class="container">
 
-    .fa,.fab,.far, .ai{
-      color: black;
-      font-size: 1.2em;
-    }
+            <div class="cm-sidebar">
+                <img src="img/icecream.JPEG" alt="profile image" class="img-fluid cm-sidebar-image">
+                <nav class="cm-main-nav">
+                    <ul>
+                        <li class="cm-nav-item"><a href="#about" class="cm-nav-item-link">About</a></li>
+                        <li class="cm-nav-item"><a href="#research_items" class="cm-nav-item-link">Research Items</a></li>
+                        <li class="cm-nav-item"><a href="#misc" class="cm-nav-item-link">Misc</a></li>
+                    </ul>
+                </nav>
+            </div>
+            
+            <div class="cm-main-content">
+                
+                <section id="about" class="cm-content-box">
+                    <div class="pad cm-banner-inner">
+                        <a href="https://catxmai.github.io"><h1 class="cm-banner-title">Cat Mai</h1></a>
+                        <p class="cm-banner-text">
+                            Hi! I am a Computer Science PhD <s>student</s> candidate at NYU Tandon, advised by <a href="https://damonmccoy.com/">Damon McCoy</a>.
+                            My current research interests are broadly in user privacy and social media auditing, with an emphasis on targeted advertising.
+                             
+                            <br><br>
+                            I'm lucky to have had many research opportunities in my undergrad.
+                            Not everything resulted in a tangible output, but I learned a lot along the way.
+                            Highlights include:
+                            training models to predict croplands (Lyndon Estes at <a href="https://agroimpacts.info/">AIRG</a>), 
+                            understanding smart phone interactions to predict mood (Talie Massachi and Jeff Huang at <a href="https://jeffhuang.com/hci/">Brown HCI</a>),
+                            analyzing parasocial relationships on YouTube (Shuo Niu),
+                            and developing ESL science curriculum (Sarah Michaels).
+                    
 
-    .social_buttons{
-      color: black;
-      letter-spacing: 8px;
-      font-size: 1.2em;
-    }
+                            <br><br>
+                            Email: cat.mai@nyu.edu <br>
+        
+                            <a href="https://scholar.google.com/citations?user=Ahem6FwAAAAJ"><b>Google Scholar</b></a>  |  
+                            <a href="https://github.com/catxmai"><b>GitHub</b></a>  |  
+                            <a href="https://keybase.io/catxmai"><b>Keybase</b></a> 
+                            <!-- <a href="pdfs/CV_Latex_Oct2023.pdf"><b>CV</b></a> -->
+                        </p>    
+                    </div>                    
+                </section>
 
-    img {
-      display: table-cell;
-      float: left;
-      width: 82%;
-      margin-right: 2em;
-      margin-bottom: 1em
-    }
+                <section id="research_items">
+                    <div class="cm-content-box">
+                        
+                        <div class="pad section-description">
 
-    .social li {
-      overflow: auto;
-      list-style-type: none;
-      margin-left: -3vmax;
-    }
+                            <p style="font-size: 1em">* = equal contribution</p>
+                            <p style="font-size: 1em">Most papers here list authors by order of contribution, while some are by alphabetical order.</p>
 
-    .paper-class {
-      font-size: 1.7em !important;
-      color: #8b35e0;
-      font-weight: 600;
-      margin-bottom: 10cm !important;
-    }
+                            <h3 class="cm-section-title">Peer-reviewed</h3>
 
-    .info-links span {
-      font-size: 1.2em !important;
-    }
+                            <span class="paper_title">Simple temporal domain adaptation techniques for mapping the inter-annual dynamics of smallholder-dominated croplands over large extents</span><br>
+                            <span>Lyndon Estes, Sam Khallaghi, Rahebe Abedi, Mary Asipunu, Nguyen Ha, Boka Luo, <b>Cat Mai</b>, Amos Wussah, Sitian Xiong, Yao-Ting Yao</span><br>
+                            <i>European Geosciences Union General Assembly 2024 (<b>EGU '24</b>)</i>
+                            <br>
+                            <a href="pdfs/unet_egu24.pdf">[pdf]</a> 
+                            <a href="https://doi.org/10.5194/egusphere-egu24-11571">[doi]</a> 
+                            <a href="https://cropanalytics.net/cropland-mapping/">[website]</a>
+                            <br><br>
 
-    .paper_title {
-      color: #000000;
-      font-weight: 600;
-      font-size: 1.05em;
-    }
+                            <span class="paper_title">#TeamTrees: Investigating How YouTubers Participate in a Social Media Campaign</span><br>
+                            <span>Shuo Niu, <b>Cat Mai</b>, Katherine G. McKim, and D. Scott McCrickard</span><br>
+                            <i>Proceedings of the ACM on Human-Computer Interaction (<b>CSCW '21</b>)</i>
+                            <br>
+                            <a href="pdfs/teamtrees.pdf">[pdf]</a> 
+                            <a href="https://doi.org/10.1145/3479593">[doi]</a> 
+                            <a href="https://github.com/shuoniu89/TeamTrees2">[code]</a>
+                            <br><br>
 
-    .paper_list {
-      margin-top: 1em;
-    }
+                            <span class="paper_title">Investigating Drug Addiction Discourse on YouTube</span><br>
+                            <span>Katherine McKim, <b>Cat Mai</b>, Danielle Hess, Shuo Niu</span><br>
+                            <i>Companion Publication of the 2021 Conference on Computer Supported Cooperative Work and Social Computing (<b>CSCW '21 Companion</b>)</i>
+                            <br>
+                            <a href="pdfs/drug2021.pdf">[pdf]</a>
+                            <a href="https://doi.org/10.1145/3462204.3481762">[doi]</a>
+                            <br><br>
 
-  </style>
-  </head>
-  <body>
-  <p class="my-name"><a href="index.html">Cat Mai</a></p>
-    <div class="nav-bar-me">
-      <ul>
-        <li><a href="index.html" class="nav-me-link me-active">bio</a></li>
-        <li><a href="projects.html" class="nav-me-link">past projects</a></li>
+                            <span class="paper_title">#StayHome #WithMe: How Do YouTubers Help With COVID-19 Loneliness?</span><br>
+                            <span>Shuo Niu, Ava Bartolome*, <b>Cat Mai*</b>, Nguyen B. Ha*</span><br>
+                            <i>Proceedings of the 2021 CHI Conference on Human Factors in Computing Systems (<b>CHI '21</b>)</i>
+                            <br>
+                            <a href="pdfs/stayhome.pdf">[pdf]</a> 
+                            <a href="https://doi.org/10.1145/3411764.3445397">[doi]</a> 
+                            <br><br>
 
-      </ul>
-  </div>
-  <br>
-<!--  <div class="main">-->
-<!--  </div>-->
-<!--  <div class="main__terminal">-->
-<!--    <pre>-->
-<!--      <code class="shell-session demo"><span class="intro-code">(cmai) $ tl;dr</span>-->
-<!--                                      </code>-->
-<!--    </pre>-->
-<!--  </div>-->
 
-  <div class="row">
-    <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3 info-links">
-      <img src="img/ava_philly.jpg">
-      <div class="social_buttons">
-        <a href="https://github.com/catxmai"  target="_blank" rel="noopener noreferrer"
-           style="display: inline-block"class="fab fa-github"></a>
-      <a href="https://scholar.google.com/citations?user=Ahem6FwAAAAJ" target="_blank" rel="noopener noreferrer"
-         style="display: inline-block" class="ai ai-google-scholar"></a>
-        <a href="https://twitter.com/CatXMai"  target="_blank" rel="noopener noreferrer"
-           style="display: inline-block"class="fab fa-twitter"></a>
-        <a href="https://keybase.io/catxmai" target="_blank" rel="noopener noreferrer"
-           style="display: inline-block" class="fab fa-keybase"></a>
-      </div>
-      <span style="font-size: 1em !important;">Email: cat.mai@nyu.edu</span><br>
-      <a href="pdfs/CatCV_Oct2022.pdf"; class="paper_link" style="font-weight: bold; font-size:1em!important;"
-         target="_blank" rel="noopener noreferrer">CV</a> <span style="font-size:1em !important;">[ver: oct 2022]</span><br>
-    </div>
+                            <h3 class="cm-section-title">Non-peer-reviewed</h3>
 
-    <div class="main__description col-lg-9 col-md-9 col-sm-9 intro">
-      Hi! I am a Computer Science PhD student at NYU Tandon, advised by <a href="https://damonmccoy.com/" target="_blank"><b class="link">Damon McCoy</b></a>.
-      My current research interests are in user privacy and social media. 
-       
-      <br><br>
-  
-      During my undergrad, I worked on social media analysis and parasocial relationship on YouTube 
-      with Prof. Shuo Niu.
+                            <span class="paper_title">Predicting Emotion and Attention from Smartphone Behavioral Data</span><br>
+                            <span>Dinithi Silva-Sassaman, <b>Cat Mai</b>, Jing Qian, Jeff Huang</span><br>
+                            Clark Fall Fest '21 
+                            <br>
+                            <a href="pdfs/automotionposter_oct2021.pdf">[pdf]</a>
+                            <a href="https://remotion.cs.brown.edu/">[website]</a>
+                            <br><br>
 
-      I also worked with Prof. Jeff Huang (Brown HCI) on
-      <a href="https://remotion.cs.brown.edu/" target="_blank"><b class="link">Automotion</b></a>,
-      using phone's motion replay and finger pressure to predict emotion and attention levels.
+                            <span class="paper_title">Numerical Analysis Report: Tension Spline</span><br>
+                            <span>Mahdi Boulila, Meherab Hossain, <b>Cat Mai</b>, Daniel Wright</span><br>             
+                            <a href="pdfs/Math212_ProjectReport.pdf" >[pdf]</a>
+                            <br><br>
 
-      <br><br><br>
-    </div>
-  </div>
-  <br><br>
-    <div class="main__description">
 
-    </div>
-    <p style="font-size: 1em">* = equal contribution</p>
-    <div class="main__description">
-      <span class="paper-class">Conference papers</span>
-      <br>
-      <div class="paper_list">
-          <span class="paper_title">#TeamTrees: Investigating How YouTubers Participate in a Social Media Campaign
-          </span><br>
-          <span>Shuo Niu, <b>Cat Mai</b>, Katherine G. McKim, and D. Scott McCrickard</span><br>
-          CSCW '21 <a href="pdfs/teamtrees.pdf" target="_blank" class="paper_link">[pdf]</a>
-          <br><br>
+                            <span class="paper_title">How YouTubers Participate in a Social Media Campaign: A Culture-Based Analysis of #TeamTrees</span><br>
+                            <span><b>Cat Mai</b></span><br>
+                            Clark Winter Fest '21
+                            <br>
+                            <a href="pdfs/teamtrees_poster.pdf">[pdf]</a>
+                            <br><br>
 
-          <span class="paper_title">#StayHome #WithMe: How Do YouTubers Help With COVID-19 Loneliness?</span><br>
-          <span>Shuo Niu, Ava Bartolome*, <b>Cat Mai*</b>, Nguyen B. Ha*</span><br>
-          CHI '21 <a href="pdfs/stayhome.pdf" target="_blank" class="paper_link">[pdf]</a>
-      </div>
+                            <span class="paper_title">“Odd One Out”: Model Based Biology in an ESL Classroom</span><br>
+                            <span><b>Cat Mai*</b>, Tina Chiem*, Anisha Hassan*</span><br>
+                            Clark Fall Fest '19
+                            <br>
+                            <a href="pdfs/TheOddOneOut.pdf">[pdf]</a>
+                  
+                        </div>                  
+                        
 
-      <br><br>
-      <span class="paper-class">Posters</span>
-      <br>
-      <div class="paper_list">
-          <span class="paper_title">Predicting Emotion and Attention from Smartphone Behavioral Data</span><br>
-          <span>Dinithi Silva-Sassaman, <b>Cat Mai</b>, Jing Qian, Jeff Huang</span><br>
-          Clark Fall Fest '21 
-          <a href="pdfs/automotionposter_oct2021.pdf" target="_blank" class="paper_link">[pdf]</a>
-          <a href="https://remotion.cs.brown.edu/" target="_blank" class="paper_link">[website]</a>
-          <br><br>
+                    </div>
+                    
+                </section>
 
-          <span class="paper_title">Investigating Drug Addiction Discourse on YouTube</span><br>
-          <span>Katherine McKim, <b>Cat Mai</b>, Danielle Hess, Shuo Niu</span><br>
-          CSCW '21 <a href="pdfs/drug2021.pdf" target="_blank" class="paper_link">[pdf]</a>
-          <br><br>
+                <section id="misc" class="cm-content-box">
 
-          <span class="paper_title">How YouTubers Participate in a Social Media Campaign: A Culture-Based Analysis of #TeamTrees</span><br>
-          <span><b>Cat Mai</b></span><br>
-          Clark Winter Fest '21 <a href="pdfs/teamtrees_poster.pdf" target="_blank" class="paper_link">[pdf]</a>
-          <br><br>
+                    <div class="pad section-description">
+                        <h2 class="cm-section-title">Miscellaneous</h2>
 
-          <span class="paper_title">“Odd One Out”: Model Based Biology in an ESL Classroom</span><br>
-          <span><b>Cat Mai*</b>, Tina Chiem*, Anisha Hassan*</span><br>
-          Clark Fall Fest '19 <a href="pdfs/TheOddOneOut.pdf" target="_blank" class="paper_link">[pdf]</a>
-      </div>
-      <br><br>
-    </div>
+                        <span>
+                          In my free time, I boulder, indoor garden, and play Go/weiqi. I also eat a lot of apples.
+                          <a href="https://catmai.notion.site/5a88b4e66bf54ea1b6ad2a86b0e47d40">Some varieties 🍎</a>.
+                        </span>
+                        <br><br>
+                        <span>
+                          If you're applying for PhD programs, one version of my <a href="pdfs/SOP_nyu.pdf">Statement of Purpose</a> and <a href="pdfs/CatCV_Jan2022.pdf">CV</a> at the time. 
+                          I'm happy to answer questions (to the best of my ability).
+                        </span>
+                        
+                    </div>
+                    
+                </section>  
 
-  <span class="paper-class">Personal</span>
-  <br><br>
+                <footer class="cm-footer">
+                    <p class="text-xs-center">made while eating an 🍎 by Cat Mai - last updated: Nov 2024</p>
+                </footer>
 
-  <div class="row">
-    <!-- <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3 info-links">
-      <img src="img/apple.jpg" style="width: 100%">
-    </div> -->
-
-  <div class="main__description col-lg-12 col-md-12 col-sm-12 intro">
-    In my free time, I boulder, indoor garden, and play Go/weiqi. I also eat a lot of apples.
-      <a href="https://catmai.notion.site/5a88b4e66bf54ea1b6ad2a86b0e47d40" target="_blank"style="color: #e140f3;">Some varieties</a>.
+            </div>
+             
+        </div>
+        
+        <!-- load JS files -->
+        
+        <script src="js/jquery-1.11.3.min.js"></script>             <!-- jQuery (https://jquery.com/download/) -->
+        <script src="js/bootstrap.min.js"></script>                 <!-- Bootstrap (http://v4-alpha.getbootstrap.com/getting-started/download/) -->
+        <script src="js/jquery.singlePageNav.min.js"></script>      <!-- Single Page Nav (https://github.com/ChrisWojcik/single-page-nav) -->
+        
+        <script>                      
     
-      <br><br>
+        $(document).ready(function(){
 
-    If you're applying for PhD programs, one version of my <a href="pdfs/SOP_nyu.pdf" target="_blank" class="paper_link">Statement of Purpose</a> and <a href="pdfs/CatCV_Jan2022.pdf" target="_blank" class="paper_link">CV</a> at the time. 
-    I've benefitted from the help of many and I'm happy to return the favor. 
-     
-  </div>
-  </div>
- 
-  <br><br>
+            // Single page nav
+            if($(window).width() <= 1139) {
+                $('.cm-main-nav').singlePageNav({
+                    'currentClass' : "active",
+                    offset : 100
+                });
+            } else {
+                $('.cm-main-nav').singlePageNav({
+                    'currentClass' : "active",
+                    offset : 80
+                });
+            }
 
-    <footer class="footer">©cat mai - last updated: jul 2023. I do not track traffic.</footer>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
-    <script>hljs.initHighlightingOnLoad();</script>
+            // Handle nav offset upon window resize
+            $(window).resize(function(){
+                if($(window).width() <= 1139) {
+                    $('.cm-main-nav').singlePageNav({
+                        'currentClass' : "active",
+                        offset : 100
+                    });
+                } else {
+                    $('.cm-main-nav').singlePageNav({
+                        'currentClass' : "active",
+                        offset : 80
+                    });
+                }
+            });
+    
 
-  </body>
-</html>
+        });
+    
+        </script>             
+
+    </body>
+    </html>
