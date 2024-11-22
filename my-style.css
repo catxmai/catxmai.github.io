@@ -1,8 +1,18 @@
 
 :root {
 	--background-color: #d3c4b8;
-	--text-color: #242222;
+	--text-color: #575757;
 	--title-color: rgb(106, 45, 204);
+}
+
+html, body {
+	background-color: var(--background-color);
+	color: var(--text-color);
+	font-family: 'Open Sans', sans-serif;
+	font-size: 16px;
+	font-weight: 400;
+	padding-top: 80px;
+	overflow-x: hidden;
 }
 
 a:focus {
@@ -11,7 +21,6 @@ a:focus {
 }
 
 a {
-    font-weight: 400; 
     color: #289752; 
     text-decoration: none; 
 }
@@ -24,16 +33,6 @@ a:hover {
 ul { 
 	padding: 0;
 	margin: 0; 
-}
-
-body {
-	background-color: var(--background-color);
-	color: var(--text-color);
-	font-family: 'Open Sans', sans-serif;
-	font-size: 16px;
-	font-weight: 300;
-	padding-top: 80px;
-	overflow-x: hidden;
 }
 
 .paper_title {
@@ -51,7 +50,7 @@ body {
 
 .cm-main-nav {
 	background-color: white;
-	font-size: 1em;
+	font-size: 1.1em;
 	padding-top: 15px;
 	padding-bottom: 10px;
 	text-align: center;
@@ -86,7 +85,6 @@ body {
 .cm-section-title, 
 .cm-banner-text {
 	color: var(--text-color);
-	font-weight: 400;
 	margin-top: 20px;
 }
 
