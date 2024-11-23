@@ -1,8 +1,10 @@
 
 :root {
 	--background-color: #d3c4b8;
-	--text-color: #575757;
-	--title-color: rgb(106, 45, 204);
+    --text-color: #1a1a1a;
+    --title-color: #7e0dc0;
+	--link-color: #0ead69;
+	--link-hover-color: #d18732;
 }
 
 html, body {
@@ -16,18 +18,19 @@ html, body {
 }
 
 a:focus {
-	color:var(--text-color);
+	color:var(--link-hover-color);
 	outline: none;
+	text-decoration: none; 
 }
 
 a {
-    color: #289752; 
+    color: var(--link-color); 
     text-decoration: none; 
 }
 
 a:hover {
     text-decoration: none; 
-	color: #d18732;
+	color: var(--link-hover-color);
 }
 
 ul { 
@@ -51,6 +54,7 @@ ul {
 .cm-main-nav {
 	background-color: white;
 	font-size: 1.1em;
+	letter-spacing: .5px;
 	padding-top: 15px;
 	padding-bottom: 10px;
 	text-align: center;
@@ -151,7 +155,7 @@ ul {
 .cm-footer {
 	color: #424141;
 	padding-bottom: 15px;
-	font-size: .9em;
+	font-size: .85em;
 }
 
 
