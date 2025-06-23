@@ -33,10 +33,6 @@ a:hover {
 	color: var(--link-hover-color);
 }
 
-ul { 
-	padding: 0;
-	margin: 0; 
-}
 
 .paper_title {
     font-size: 1em; 
@@ -44,6 +40,18 @@ ul {
     color: var(--title-color); 
     line-height: 1.4; 
 }
+
+
+.section-block {
+    margin-top: 1.5em;
+}
+
+ul.clean-list {
+    margin: 0;
+    padding-left: 1.2em;
+    list-style-position: outside;
+}
+
 
 
 .cm-sidebar {
